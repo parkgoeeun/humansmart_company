@@ -1,0 +1,419 @@
+body, #header {
+    min-width: 1024px;
+}
+
+.header_br {
+    display: none;
+}
+
+#header a, header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.head {
+    border-top: 4px solid #FEA45A;
+    font-weight: bold;
+}
+
+.menu {
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+.menu a {
+    color: #717070;
+    background-color: transparent;
+}
+
+.menu:hover a {
+    border-top: 4px solid #FEA45A;
+    color: #717070;
+    padding-top: 8px;
+    background-color: transparent;
+}
+
+.nav_1 {
+    float: left;
+    font-size: 16px;
+    height: 100%;
+}
+
+.nav_2 {
+    float: right;
+    font-size: 16px;
+    height: 100%;
+}
+
+.nav_1_table {
+    float: left;
+    border-collapse: collapse;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.nav_2_table {
+    float: right;
+    border-collapse: collapse;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.info_span {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+header td {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.auth_escro hr {
+    margin-bottom: 1.1rem;
+    margin-top: 1.1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.escro_info {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.mobile_FOOTER {
+    display: none;
+}
+
+.auth_escro {
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: -1.2rem;
+}
+
+.FOOTER_1 {
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 0px auto;
+    padding: 0px 0px 35px 0px;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.FOOTER_1_1 {
+    display: inline-block;
+    width: 1024px;
+    position: relative;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-size: 1rem;
+}
+
+.FOOTER_1_1 a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin-right: 1.5rem;
+}
+
+.FOOTER_1_2 {
+    width: auto;
+    text-align: center;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.info_sns {
+    width: 29%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+.info_office {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+.info_contact {
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+.info_sns img, .info_office img, .info_contact img {
+    width: 50px;
+}
+
+.TROST_BOX_8 {
+    background: #F0F0F0;
+    padding: 15px 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.TROST_BOX_8_contents {
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    background: none;
+}
+
+.TROST_BOX_8 button, img, a {
+    cursor: pointer;
+}
+
+.foot1 {
+    width: 100%;
+    margin: 0px auto;
+    background: #464646;
+    color: #FFFFFF;
+}
+
+/**********************************************
+* 웹 기본 세팅
+**********************************************/
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    src: url('/assets/fonts/NanumBarunGothicLight.eot');
+    src: local(※), url('/assets/fonts/NanumBarunGothicLight.woff') format('woff'), url('/assets/fonts/NanumBarunGothicLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    src: url('/assets/fonts/NotoSansKR-Regular.eot');
+    src: local(※), url('/assets/fonts/NotoSansKR-Regular.woff') format('woff'), url('/assets/fonts/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+/*@font-face {
+    font-family: 'NanumPen';
+    font-style: normal;
+    src: url('/assets/fonts/NanumPen.eot');
+    src: local(※), url('/assets/fonts/NanumPen.woff') format('woff'), url('/assets/fonts/NanumPen.ttf') format('truetype');
+}*/
+
+* {
+    font-family: 'NanumBarunGothic';
+}
+
+html {
+    min-width: 1024px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+button, a {
+    cursor: pointer !important;
+    text-decoration: none;
+}
+
+textarea, button, img {
+    outline: none;
+    border: none;
+}
+
+
+/**********************************************
+* 로그인 고정 레이어
+**********************************************/
+
+#sign_in {
+    width: 450px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    margin: 0px auto;
+}
+
+.sign_g {
+    font-size: 25px;
+    margin-right: -30px;
+    color: #000000;
+}
+
+.sign_g_table {
+    margin: 0px auto;
+}
+
+.id {
+    width: 284px;
+    height: 18px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+}
+
+.pw {
+    width: 284px;
+    height: 18px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+}
+
+.sign_b {
+    width: 306px;
+    height: 40px;
+    background: #FEA45A;
+    color: #FFFFFF;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.sign_b_f {
+    width: 306px;
+    height: 42px;
+    background: blue;
+    color: #FFFFFF;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sign_hr {
+    border: 1px solid #CCCCCC;
+    border-width: 1px 0 0 0;
+    width: 527px;
+    margin-top: 20px;
+    position: relative;
+    left: -38px;
+}
+
+.sign_hr_shrt {
+    border: 1px solid #CCCCCC;
+    border-width: 1px 0 0 0;
+    width: 304px;
+}
+
+.ids {
+    color: #FEA45A;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 12px;
+    width: 306px;
+    margin: 0px auto;
+}
+
+.pws {
+    color: #FEA45A;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    width: 306px;
+    margin: 0px auto;
+}
+
+.sign_help {
+    text-decoration: none;
+    font-size: 15px;
+    color: #999999;
+}
+
+.sign_up {
+    text-decoration: none;
+    font-size: 15px;
+    color: #FEA45A;
+}
+
+.layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.layer .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.layer .pop-layer {
+    display: block;
+}
+
+.pop-layer, .layer2 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 527px;
+    height: auto;
+    opacity: 50;
+    background-color: #FFFFFF;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    z-index: 10;
+    border: 2px solid #FEA45A;
+}
+
+.pop-layer .pop-container {
+    padding: 0px 24px;
+}
+
+.id:focus, .new_pw {
+    border: 1px solid #FEA45A;
+    box-shadow: 0 0 5px #FEA45A;
+    outline: 0;
+}
+
+.pw:focus, .new_pw_cmf {
+    border: 1px solid #FEA45A;
+    box-shadow: 0 0 5px #FEA45A;
+    outline: 0;
+}
+
+.TROST_BOX_8 {
+    display: none;
+}

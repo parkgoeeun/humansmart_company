@@ -1,0 +1,78 @@
+
+	.wrapper {
+		width: 1024px;
+		margin: 5px auto;
+	}
+
+	.forum_top {
+		width: 100%;
+		height: 216px;
+		background-image: url("/assets/img/of_forum/1680.png");
+		background-size: 100% 100%;
+		text-align: center;
+		padding-top: 80px;
+		margin-bottom: 30px;
+	}
+
+	.forum_top h1 {
+		color:#FFFFFF;margin-top:0px;font-size:40px;
+	}
+
+	.search {
+		background:rgba(255, 255, 255, 0.8);width:600px;padding:10px;margin:0px auto;	
+	}
+
+	.search input { padding:10px 20px;width:80%;border:none;font-size:15px;margin:0px auto; }
+	
+	.search_img_1 { 
+		height: 37px;
+		vertical-align: middle;
+		border: none;
+		cursor: pointer;
+	}
+	
+	.search_img_2 { 
+		height: 37px;
+		vertical-align: middle;
+		border: none;
+		cursor: pointer;
+	}
+
+	.forum { 
+		border-collapse: separate;
+		border-radius: 10px;
+		border-spacing: 0px;
+		margin: 0px;
+		padding: 0px;
+		width: 1024px;
+		margin: 5px auto;
+	}
+
+	.wrapper_ { width:964px;border:2px solid #FFB347;border-radius:10px;padding:30px;margin:0px auto; }
+	
+	.forum_tab { width:100%;height:150px;padding:50px 0px;background-image:url("/assets/img/forum_bg2.png");background-size:100% 100%;text-align:center; }
+	
+	.forum_tab h3 { 
+		color: #FFFFFF;
+		font-weight: normal; 
+		line-height: 30px;
+	}
+	.tab_up { border:1px solid #FFB347;background-color:#FFB347;text-decoration:none;color:#FFFFFF;padding:10px 60px; }
+	.tab_guide { border:1px solid #FFFFFF;background-color:transparent;text-decoration:none;color:#FFFFFF;padding:10px 60px; }
+	.forum_a { width:100%;height:200px;padding:50px 0px;background-image:url("/assets/img/forum_bg3.png");background-size:100% 100%;cursor:pointer; }
+	.a_1 { float:left;cursor:pointer; }
+	.a_2 { float:left;cursor:pointer;width:80%;margin-top:-30px; }
+	.a_1 h1 { color:#FFFFFF;font-weight:normal;margin-left:50px; }
+	.a_1 b { font-size:120px; }
+	.a_2 h1 { color:#FFFFFF;font-weight:normal;margin-left:50px;font-size:20px;line-height:30px; }
+	.a_2 b { font-size:30px; }
+
+	@media (max-width: 1024px) {
+		.wrapper {
+			width: 90%;
+		}
+
+		.wrapper_ {
+			width: 95%;
+		}
+	}

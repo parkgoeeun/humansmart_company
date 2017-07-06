@@ -1,0 +1,544 @@
+
+	@media (min-width: 1024px) {
+
+		.sign_up_header {
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			height: 70px;
+			margin: 0px auto;
+			background: #FEA45A;
+			color: #FFFFFF;
+		}
+
+		.sign_up_header ul,
+		.sign_up_header li {
+			margin: 0px;
+			padding: 0px;
+			height: 70px;
+			list-style: none;
+			display: inline-block;
+			font-size: 0.85rem;
+			vertical-align: middle;
+			line-height: 70px;
+		}
+
+		.h_logo {
+			float: left;
+		}
+
+		.h_menu {
+			float: right;
+		}
+
+		.sign_up_header a {
+			text-decoration: none;
+			color: #FFFFFF;
+		}
+
+		.sign_top_logo {
+			vertical-align: middle;
+			margin-left: 35px;
+			width: 70%;
+			margin-top: -5%;
+		}
+
+	    .wrapper {
+			width: 100%;
+			margin: 0px auto;
+			background: #F5F6F7;
+			padding: 41px 0px;
+		}
+
+		.information {
+			width: 1024px;
+			border: 1px solid #DADADA;
+			background: #FFFFFF;
+			text-align: center;
+			margin: 0px auto;
+			padding: 132px 0px 112px 0px;
+		}
+
+		.check_age {
+			font-size: 1rem;
+			text-align: left;
+			width: 40%;
+			margin: 0px auto;
+		}
+
+		.check_age input[type=checkbox] {
+			width: 21px;
+			height: 21px;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+
+		.check_age_p {
+			color: #FEA45A;
+			font-size: 0.8rem;
+			width: 40%;
+			margin: 0px auto;
+			line-height: 1rem;
+			padding: 8px 0px 0px 65px;
+			text-align: left;
+		}
+
+		.signup_line {
+			margin: 109px 0px 0px 0px;
+		}
+
+		.gocyber {
+			display: block;
+			text-decoration: none;
+			line-height: 53px;
+			width: 292px;
+			height: 53px;
+			background: #FEA45A;
+			color: #FFFFFF;
+			font-size: 1rem;
+			margin: 0px auto;
+			margin-top: 18px;
+		}
+
+		.information h1 {
+			margin: 45px 0px 76px 0px;
+			text-align: center;
+			color: #4A4A4A;
+			font-size: 28px;
+		}
+
+		.information h5 {
+			text-align: left;
+			margin: 0px 0px 0px 317px;
+			color: #4D4D4D;
+			font-size: 11px;
+		}
+
+		.info_1 {
+			width: 29%;
+			text-align: right;
+			padding-bottom: 25px;
+			color: #4D4D4D;
+		}
+
+		.info_2 {
+			text-align: left;
+			padding: 0px 0px 25px 15px;
+		}
+
+		.info_table {
+			width: 100%;
+			height: auto;
+			margin-bottom: 40px;
+		}
+
+		.textin {
+			border: 1px solid #DADADA;
+			width: 209px;
+			height: 12px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.Chkrep {
+			width: 88px;
+			height: 33px;
+			font-size: 15px;
+			background: #FEA45A;
+			color: #FFFFFF;
+			border: none;
+			margin: 0px auto;
+		}
+
+		.box1 {
+			border: 1px solid #DADADA;
+			width: 100px;
+			height: 34px;
+			font-size: 14px;
+			vertical-align:  middle;
+		}
+
+		.box2 {
+			border: 1px solid #DADADA;
+			width: 231px;
+			height: 32px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.box3 {
+			border: 1px solid #DADADA;
+			width: 231px;
+			height: 32px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.guide {
+			font-size: 11px;
+			color: #4D4D4D;
+			margin-top: 3px;
+		}
+
+		.ChkSign {
+			width: 292px;
+			height: 53px;
+			background: #FEA45A;
+			color: #FFFFFF;
+			font-size: 1rem;
+			margin-top: 18px;
+			cursor: pointer !important;
+		}
+
+		.email {
+			border: 1px solid #DADADA;
+			width: 150px;
+			height: 12px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		#sign_up_3 {
+			width: 800px;
+			margin: 0px auto;
+		}
+
+		.sign_good {
+			width: 800px;
+			height: 550px;
+			background: #FFFFFF;
+			text-align: center;
+			margin: 0px auto;
+			vertical-align: middle;
+			display: table-cell;
+		}
+
+		.sign_good h1 {
+			font-size: 1.5rem;
+		}
+
+		.sign_good h3 {
+			font-size: 1.25rem;
+			color: #FEA45A;
+			margin-top: 50px;
+			margin-bottom: 15px;
+		}
+
+		.sign_good span {
+			color: #000000;
+			font-size: 1.15rem;
+		}
+
+		.sign_good_ {
+			padding-bottom: 60px;
+		}
+
+		.sign_good a {
+			background: #FEA45A;
+			color: #FFFFFF;
+			padding: 10px 35px;
+			margin-top: 20px;
+		}
+
+		.disabled_noti {
+			display: none;
+		}
+
+		.disabled {
+			cursor: default !important;
+			opacity: 0.5;
+		}
+
+		input:focus {
+			border: 1px solid #FEA45A;
+			box-shadow: 0 0 5px #FEA45A;
+			outline: 0;
+		}
+
+		.input_err {
+			border: 1px solid #ff0000;
+			box-shadow: 0 0 2px #FF0000;
+		}
+
+	}
+
+	@media (max-width: 1023px) {
+
+		html { overflow-x: hidden; }
+
+		.sign_up_header {
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			height: 70px;
+			margin: 0px auto;
+			background: #FEA45A;
+			color: #FFFFFF;
+		}
+
+		.sign_up_header ul,
+		.sign_up_header li {
+			margin: 0px;
+			padding: 0px;
+			height: 70px;
+			list-style: none;
+			display: inline-block;
+			font-size: 0.75rem;
+			vertical-align: middle;
+			text-align: right;
+			line-height: 70px;
+		}
+
+		.h_logo {
+			float: left;
+			width: 25%;
+		}
+
+		.h_menu {
+			float: right;
+			width: 70%;
+		}
+
+		.sign_up_header a {
+			text-decoration: none;
+			color: #FFFFFF;
+		}
+
+		.sign_top_logo {
+			vertical-align: middle;
+			width: 100%;
+			margin-left: 10%;
+		}
+
+	    .wrapper {
+			width: 100%;
+			margin: 0px auto;
+			background: #F5F6F7;
+		}
+
+		.information {
+			width: 100%;
+			border: 1px solid #DADADA;
+			background: #FFFFFF;
+			text-align: center;
+			margin: 0px auto;
+			padding: 61px 0px 112px 0px;
+		}
+
+		.check_age {
+			font-size: 0.9rem;
+			line-height: 1.4rem;
+			text-align: left;
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		.check_age input[type=checkbox] {
+			width: 21px;
+			height: 21px;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+
+		.check_age_p {
+			color: #FEA45A;
+			font-size: 0.8rem;
+			line-height: 1.4rem;
+			width: 90%;
+			margin: 0px auto;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		.gocyber {
+			display: block;
+			text-decoration: none;
+			line-height: 53px;
+			width: 80%;
+			height: 53px;
+			background: #FEA45A;
+			color: #FFFFFF;
+			font-size: 1rem;
+			margin: 0px auto;
+			margin-top: 18px;
+		}
+
+		.signup_line {
+			margin: 50px 0px 0px 0px;
+		}
+
+		.information h1 {
+			margin: 50px 0px 40px 0px;
+			text-align: center;
+			color: #4A4A4A;
+			font-size: 1.5rem;
+		}
+
+		.information h5 {
+			text-align: left;
+			margin: 0px 0px 0px 34%;
+			color: #4D4D4D;
+			font-size: 0.6rem;
+		}
+
+		.info_1 {
+			width: 25%;
+			font-size: 0.7rem;
+			text-align: right;
+			padding-bottom: 25px;
+			color: #4D4D4D;
+		}
+
+		.info_2 {
+			text-align: left;
+			font-size: 0.85rem;
+			padding: 0px 0px 20px 10px;
+		}
+
+		.info_table {
+			width: 100%;
+			height: auto;
+		}
+
+		.textin {
+			border: 1px solid #DADADA;
+			width: 75%;
+			height: 1rem;
+			padding: 8px;
+			font-size: 0.8rem;
+		}
+
+		.Chkrep {
+			display: block;
+			width: 40%;
+			height: 1.8rem;
+			padding: 0px 8px;
+			margin-top: 4%;
+			font-size: 0.8rem;
+			background: #FEA45A;
+			border: 1px solid #FEA45A;
+			color: #FFFFFF;
+		}
+
+		.box1 {
+			border: 1px solid #DADADA;
+			width: 100px;
+			height: 34px;
+			font-size: 14px;
+			vertical-align:  middle;
+		}
+
+		.box2 {
+			border: 1px solid #DADADA;
+			width: 231px;
+			height: 32px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.box3 {
+			border: 1px solid #DADADA;
+			width: 231px;
+			height: 32px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.guide {
+			display: block;
+			font-size: 11px;
+			line-height: 1rem;
+			color: #4D4D4D;
+			margin-top: 6px;
+			margin-left: 0px;
+			width: 95%;
+		}
+
+		.ChkSign {
+			width: 292px;
+			height: 53px;
+			background: #FEA45A;
+			color: #FFFFFF;
+			font-size: 1rem;
+			margin-top: 18px;
+			cursor: pointer !important;
+		}
+
+		.email {
+			border: 1px solid #DADADA;
+			width: 150px;
+			height: 12px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		#sign_up_3 {
+			width: 800px;
+			margin: 0px auto;
+		}
+
+		.sign_good {
+			width: 800px;
+			height: 550px;
+			background: #FFFFFF;
+			text-align: center;
+			margin: 0px auto;
+			vertical-align: middle;
+			display: table-cell;
+		}
+
+		.sign_good h1 {
+			font-size: 1.5rem;
+		}
+
+		.sign_good h3 {
+			font-size: 1.25rem;
+			color: #FEA45A;
+			margin-top: 50px;
+			margin-bottom: 15px;
+		}
+
+		.sign_good span {
+			color: #000000;
+			font-size: 1.15rem;
+		}
+
+		.sign_good_ {
+			padding-bottom: 60px;
+		}
+
+		.sign_good a {
+			background: #FEA45A;
+			color: #FFFFFF;
+			padding: 10px 35px;
+			margin-top: 20px;
+		}
+
+		.disabled_noti {
+			display: none;
+		}
+
+		.disabled {
+			cursor: default !important;
+			opacity: 0.5;
+		}
+
+		span.id_err_noti_1.guide,
+		span.pw_err_noti_1.guide,
+		span.pw_err_noti_2.guide,
+		span.pw_err_noti_3.guide {
+			margin-left: 0px !important;
+		}
+
+		input:focus {
+			border: 1px solid #FEA45A;
+			box-shadow: 0 0 5px #FEA45A;
+			outline: 0;
+		}
+
+		.input_err {
+			border: 1px solid #ff0000;
+			box-shadow: 0 0 2px #FF0000;
+		}
+
+	}

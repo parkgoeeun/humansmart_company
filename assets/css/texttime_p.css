@@ -1,0 +1,1042 @@
+* {
+	font-family: 'NotoSans' !important;
+}
+
+html, head, body {
+	height: 100%;
+	font-size: 16px;
+}
+
+/**********************************
+* 텍스트 테라피 페이지 전용 메뉴
+**********************************/
+.texttime_header {
+	z-index: 60;
+	background: #FEA45A;
+	color: #FFFFFF;
+	width: 100%;
+	height: 7%;
+}
+
+.texttime_header a {
+	color: #FFFFFF !important;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.texttime_logo {
+	float: left;
+	height: 100%;
+}
+
+.logo {
+	width: 100px;
+	padding-top: 10%;
+	padding-left: 10%;
+}
+
+.texttime_menu {
+	float: right;
+	height: 100%;
+}
+
+.texttime_menu_table {
+	height: 100%;
+}
+
+.t_menu {
+	width: auto;
+	color: #FFFFFF;
+	text-align: center;
+}
+/*******************************/
+
+.wrapper {
+	width: 80%;
+	max-width: 1024px;
+    min-width: 1024px;
+	height: auto;
+	margin: 20px auto;
+}
+
+div#status > h1 {
+	text-align: center;
+	margin: 0px auto;
+	font-size: 1.5rem;
+	color: #4A4A4A;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+/*
+* 상담사 메인 페이지.
+*/
+#partner_history {
+	width: 100%;
+	max-width: 1024px;
+    min-width: 1024px;
+	border: 2px solid #333;
+	text-align: center;
+    padding-bottom: 50px;
+}
+
+#partner_history ul {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	background: #BDBDBD;
+}
+
+#partner_history li {
+	margin: 0px auto;
+	padding: 20px 0px;
+	display: inline-block;
+	width: 24%;
+    font-size: 1.2rem;
+}
+
+#partner_history p {
+    font-size: 1rem;
+}
+
+#partner_history span#changeCounselingStatusP {
+    color: RED;
+}
+
+#partner_history p#recentlyHistory {
+    color:#595757;
+}
+
+#partner_history button#changeCounselingStatus {
+	width: 220px;
+	height: 80px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+#partner_history button.OffSystem {
+	background: #FEA45A;
+	color: #FFF;
+}
+
+#partner_history button.OnSystem {
+	background: #BDBDBD;
+	color: #000;
+}
+
+/*#partner_history button#applyPause {*/
+button#applyPause,
+button#updateProfile {
+	background: #FFF;
+	border: 2px solid #FEA45A;
+	color: #FEA45A;;
+	font-size: 0.8rem;
+	padding: 5px 10px;
+    float: left;
+    margin: 0px 0px 0px 20px;
+}
+
+#partner_client_list_menu h1 {
+	background: #BDBDBD;
+	border: 2px solid #333333;
+	font-size: 1.5rem;
+	padding: 10px 15px;
+	width: 97%;
+}
+
+#partner_client_list_menu ul {
+	margin: 0px auto;
+	padding: 0px;
+    display: inline-block;
+}
+
+#partner_client_list_menu li {
+	margin: 0px auto;
+	padding: 0px;
+	display: inline-block;
+    font-size: 0.9rem;
+    height: 100%;
+	width: 100px;
+	text-align: center;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+#partner_client_list_menu li.clicked {
+	border-bottom:4px solid #FEA45A;
+	padding-bottom: 10px;
+}
+
+#partner_client_list {
+	width: 100%;
+	max-width: 1024px;
+    min-width: 1024px;
+	margin: 20px auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#partner_client_list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#partner_client_list h4 {
+	float: left;
+    margin: 0px auto;
+    padding: 0px; auto;
+    writing-mode: tb-rl;
+    text-align: center;
+    height: 120px;
+    margin: 0px 2%;
+}
+
+#partner_client_list ul {
+	margin: 0px auto;
+	padding: 0px;
+    width: 93%;
+    height: 60px;
+    display: inline-block;
+}
+
+#partner_client_list ul.eachintro {
+    height: 80px;
+}
+
+#partner_client_list ul.eachHistory {
+    height: 40px;
+}
+
+#partner_client_list li {
+	margin: 0px auto;
+	padding: 0px;
+	display: inline-block;
+    font-size: 1rem;
+    height: 100%;
+}
+
+/* 각 상담 케이스 */
+#partner_client_list ul.eachintro li {
+	width: 24%;
+    padding-top: 15px;
+}
+
+#partner_client_list ul.eachintro p {
+    margin:0px auto;
+    color: #333;
+    font-weight: bold;
+}
+
+#partner_client_list ul.eachHistory li {
+    line-height: 40px;
+}
+
+#partner_client_list li.recently_message {
+    padding-left: 1%;
+    width: 80%;
+    color: #595757;
+    font-size: 0.8rem;
+}
+
+#partner_client_list li.recently_message span.d_day {
+    color: RED;
+    font-size: 0.9rem;
+	font-weight: bold;
+}
+
+#partner_client_list li.recently_time {
+    /*padding-right: 1%;*/
+    float: right;
+	margin-right: 1%;
+	width: 110px;
+}
+
+/* HY - 신규 / HH - 진행 중 / HN - 종료 */
+#partner_client_list div.eachCounseling {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    border: 2px solid #333333;
+    cursor: pointer;
+}
+
+#partner_client_list div.eachCounseling hr {
+    border: 0.5px solid #333;
+    height: 0px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#partner_client_list div.HY {
+    border: 2px solid #333333;
+}
+
+#partner_client_list div.HY h4 {
+    color: #7E2221;
+}
+
+#partner_client_list div.HY ul {
+    border-left: 2px solid #333333;
+}
+
+#partner_client_list div.HN {
+    border: 2px solid #BDBDBD;
+}
+
+#partner_client_list div.HN h4 {
+    color: #BDBDBD;
+}
+
+#partner_client_list div.HN ul {
+    border-left: 2px solid #BDBDBD;
+}
+
+#partner_client_list div.HN * {
+    color: #BDBDBD !important;
+}
+
+#partner_client_list div.HN hr {
+    border: 0.5px solid #BDBDBD;
+}
+
+#partner_client_list div.HH {
+    border: 2px solid #333333;
+}
+
+#partner_client_list div.HH h4 {
+    color: #abceab;
+}
+
+#partner_client_list div.HH ul {
+    border-left: 2px solid #333333;
+}
+
+#partner_client_list li.recently_time span.unReadMsgCntDom {
+    background: #7E2221;
+    color: #FFF;
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin-left: 8%;
+}
+/**/
+
+/*
+* 상담사 공지사항
+*/
+#notice h1.title {
+	display: inline-block;
+	width: 48%;
+	font-size: 2rem;
+	margin: 20px auto;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+	opacity: 0.2;
+	cursor: pointer;
+}
+
+#notice h1.clicked {
+	opacity: 1;
+}
+
+#notice div.popup {
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	background: #BDBDBD;
+	border-top: 3px solid #333333;
+	border-bottom: 3px solid #333333;
+}
+
+#board_faq {
+	display: none;
+}
+
+#notice div .flip {
+    font-size: 1rem;
+    padding: 30px 20px 20px 20px;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333333;
+	border-top: 1px solid #000;
+	margin-bottom: 0px;
+}
+
+#notice div .panel {
+	font-size: 1rem;
+	line-height: 1.4rem;
+    padding: 15px 35px;
+    display: none;
+    cursor: pointer;
+    color: #595757;
+}
+
+#notice div img.arrow_faq {
+	position: absolute;
+	right: 0px;
+	margin-top: 3px;
+	width: 40px;
+	vertical-align: middle;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#notice div .flip span {
+	color: #FEA45A;
+	font-weight: bold;
+}
+
+#notice div .flip span.Type1 {
+	color: #998A7F;
+}
+/**/
+
+/*
+* 상담 로딩 애니메이션
+*/
+.opacityBg { display:none;position:fixed;z-index:30;top:0px;background: rgba(000, 000, 000, 0.8);width:100%;height:100%; }
+
+div.loader {
+    height: 100px;
+    width: 100px;
+    border: 6px solid #fff;
+    border-right-color: #FEA45A;
+    border-top-color: #FEA45A;
+    border-radius: 100%;
+    border-width: 13px;
+    -webkit-animation: spin 800ms infinite linear;
+    animation: spin 800ms infinite linear;
+    z-index: 15896485;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    display: none;
+}
+
+p.loader {
+    z-index: 15896485;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    display: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+div#PausePopup {
+	display:none;
+	z-index:35;
+	margin:0px auto;
+	padding:20px;
+	border:3px solid #FEA45A;
+	border-radius:10px;
+	position:absolute;
+	top:50%;
+	left: 50%;
+	margin-left: -270px;
+	margin-top: -125px;
+	background:#FFF;
+}
+
+div#PausePopup input[type=text] {
+	font-size: 0.8rem;
+	border: 1px solid #BDBDBD;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+
+div#PausePopup textarea {
+	border: 3px solid #BDBDBD;width: 95%;padding: 10px;font-size: 1rem;line-height: 1.4rem;
+}
+
+div#PausePopup button {
+	padding:8px 16px;font-size:0.9rem;margin:0px auto;background:#FEA45A;color:#FFF;
+}
+
+@-webkit-keyframes "spin" {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes "spin" {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+/**/
+
+/*
+* 상담사 마이페이지
+*/
+div.top_menu {
+	width:100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+div.top_menu h1 {
+	margin: 0px auto;
+	font-size: 1.5rem;
+	color: #4A4A4A;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+div.top_menu ul {
+	width: 100%;
+	height: 42px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+div.top_menu ul li {
+	width: 24%;
+	height: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	font-size: 1rem;
+	line-height: 44px;
+	background: #FFF;
+	border: 1px solid #FEA45A;
+	list-style: none;
+	display: inline-block;
+	color: #FEA45A;
+	cursor: pointer;
+}
+
+div.top_menu ul li.clicked {
+	background: #FEA45A;
+	color: #FFF;
+}
+
+div.tabPage {
+	width: 98%;
+	height: auto;
+	margin: 40px auto;
+	margin-bottom: 100px;
+}
+
+div.tabPage h1 {
+	border-left: 10px solid #333333;
+	vertical-align: middle;
+	padding-left: 15px;
+}
+
+/*
+* 마이페이지 수정 페이지.
+*/
+div#mypage_edit input[type=text] {
+   padding: 5px 10px;
+   font-size: 0.9rem;
+   outline: none;
+   border: 2px solid #C9C9C9;
+}
+
+div#mypage_edit textarea {
+   width: 100%;
+   height: auto;
+   font-size: 0.9rem;
+   line-height: 1.4rem;
+   padding: 15px;
+   outline: none;
+   border: 2px solid #C9C9C9;
+}
+/**/
+
+div#profile table {
+	width: 100%;
+	height: auto;
+	border-collapse: collapse;
+}
+
+div#profile table th {
+	font-weight: bold;
+	background: #F2F2F2;
+	width: 20%;
+}
+
+div#profile table th,
+div#profile table td {
+	border: 1px solid #333333;
+	font-size: 1rem;
+	padding: 13px;
+	text-align: left;
+}
+
+div#profile td.profPic {
+	text-align: center;
+	width: 20%;
+}
+
+div#profile td.profGuide {
+	background: #BDBDBD;
+	text-align: center;
+}
+
+div#counselingSchedule ul {
+	border-top: 3px solid #333;
+	border-bottom: 3px solid #333;
+	padding: 15px 0px;
+}
+
+div#counselingSchedule li {
+	list-style: none;
+	padding: 10px 0px 10px 80px;
+	font-size: 1rem;
+}
+
+div#counselingSchedule p.profGuide {
+	color: #BDBDBD;
+	font-weight: bold;
+}
+
+div#profCareer ul {
+	border-top: 3px solid #333;
+	border-bottom: 3px solid #333;
+	padding: 15px 0px;
+}
+
+div#profCareer li {
+	list-style: none;
+	padding: 10px 0px 10px 80px;
+	font-size: 1rem;
+}
+
+div#profCareer > span,
+div#profIntro > span {
+	display: block;
+	text-align: right;
+	font-size: 0.8rem;
+	margin-top: -22px;
+	margin-bottom: -10px;
+}
+
+div#profIntro p {
+	border-top: 3px solid #333;
+	border-bottom: 3px solid #333;
+	padding: 50px 80px;
+	font-size: 1rem;
+	line-height: 1.6rem;
+}
+
+div#matchingKeyword table {
+	width: 100%;
+	padding: 5px 10px;
+	border-collapse: collapse;
+}
+
+div#matchingKeyword th {
+	text-align: left;
+	border: 1px solid #BDBDBD;
+	background: #F2F2F2;
+	padding: 12px 18px;
+}
+
+div#matchingKeyword td {
+	text-align: left;
+	border: 1px solid #BDBDBD;
+	padding: 12px 18px;
+}
+
+div#profFirstGuide .flip {
+    font-size: 1rem;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333333;
+	margin-bottom: 0px;
+	border: none;
+    background: #F2F2F2;
+    padding: 30px 30px 25px 30px;
+    border-top: 2px solid #333333;
+}
+
+div#profFirstGuide .panel {
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+    padding: 15px 35px;
+    display: none;
+    cursor: pointer;
+    color: #595757;
+}
+
+div#profFirstGuide img.arrow_faq {
+	position: absolute;
+	right: 0px;
+	margin-top: -3px;
+	width: 40px;
+	vertical-align: middle;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+div#profFirstGuide .flip span {
+	color: #FEA45A;
+	font-weight: bold;
+}
+
+div#counselingLog table#historyStatus {
+	border-collapse: collapse;
+	width: 80%;
+	margin: 20px auto;
+}
+
+div#counselingLog table#historyStatus th {
+	width: 33%;
+	background: #F2F2F2;
+	border: 1px solid #BDBDBD;
+}
+
+div#counselingLog table#historyLog {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+div#counselingLog table#historyLog #txtFilter {
+	width: 150px;
+	float: right;
+	padding: 8px 12px;
+	margin-right: 15px;
+	font-size: 0.8rem;
+}
+
+div#counselingLog th {
+	font-weight: bold;
+	background: #F2F2F2;
+	border: 1px solid #BDBDBD;
+}
+
+div#counselingLog th,
+div#counselingLog td {
+	border: 1px solid #BDBDBD;
+	padding: 20px 0px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+div#counselingLog .toHistory {
+	display:inline-block;
+	text-decoration:none;
+	line-height:30px;
+	width:85px;
+	height:30px;
+	border:1px solid #FEA45A;
+	background:#FEA45A;
+	color:#FFF;
+}
+
+div#counselingLog table#historyDetailStatus {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+div#counselingLog .modifyPayment input[type=text] {
+	padding: 3px 10px;
+	background: #FFF;
+	border: 1px solid #FEA45A;
+	font-size: 0.8rem;
+	margin: 0px 0px 5px 0px;
+	text-align: center;
+}
+
+div#counselingLog .modifyPayment button {
+	padding: 5px 20px;
+	background: #FFF;
+	border: 2px solid #FEA45A;
+	font-size: 0.8rem;
+	font-weight: bold;
+	display: block;
+	margin: 0px auto;
+	margin-top: 5px;
+}
+
+div#counselingLog th {
+	font-weight: bold;
+	background: #F2F2F2;
+	border: 1px solid #BDBDBD;
+	font-size: 1rem;
+}
+
+div#counselingLog td {
+	font-weight: normal;
+	font-size: 0.9rem;
+	/*background: #;*/
+	border: 1px solid #BDBDBD;
+	/*border-top: 2px solid #333333;*/
+}
+/**/
+
+/*
+* 실시간 상담 예약 내역
+*/
+div#schedule .scheduleGuide {
+	width: 94%;
+	background: #F2F2F2;
+	padding: 15px 30px;
+	margin: 20px auto;
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+}
+
+div#schedule input[type=text] {
+	padding: 5px 10px;
+	font-size: 0.9rem;
+}
+
+div#schedule #orderCounseling {
+	width: 80%;
+	height: 30px;
+	font-size: 0.9rem;
+}
+
+div#schedule table {
+	border-collapse: collapse;
+	border: 1px solid #333333;
+	width: 100%;
+	height: auto;
+	line-height: 1.3rem;
+	word-break: break-all;
+}
+
+div#schedule th {
+	border: 1px solid #BDBDBD;
+	padding: 20px 0px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+div#schedule td {
+	border: 1px solid #BDBDBD;
+	padding: 20px 0px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+div#schedule button.fail {
+	width:110px;
+	height:30px;
+	border:1px solid #999999;
+	background:#F5F6F7;
+	color:#999999;
+	font-size:0.9rem;
+}
+
+div#schedule span.fail {
+	color:#999999;
+}
+/**/
+
+/*
+* 바로상담/예약 이행 현황
+*/
+div#status .statusGuide {
+	width: 94%;
+	background: #F2F2F2;
+	padding: 15px 30px;
+	margin: 20px auto;
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+}
+
+div#status h4.title {
+	display: inline-block;
+	/*width: 48%;*/
+	font-size: 1.2rem;
+	margin: 20px 10px;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+	opacity: 0.2;
+	cursor: pointer;
+	border-bottom: none;
+}
+
+div#status h4.clicked {
+	opacity: 1;
+	border-bottom: 4px solid #FEA45A;
+	padding-bottom: 4px;
+}
+
+div#status table {
+	border-collapse: collapse;
+	width: 100%;
+	line-height: 1.3rem;
+	word-break: break-all;
+}
+
+div#status #statusCounseling th {
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+div#status #statusReservation th {
+	border: 1px solid #BDBDBD;
+	background: #F2F2F2;
+	padding: 20px 0px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+div#status #statusCounseling td {
+	border: 1px solid #BDBDBD;
+	padding: 20px 0px;
+	padding-left: 15px;
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+div#status #statusReservation td {
+	border: 1px solid #BDBDBD;
+	padding: 20px 0px;
+	font-size: 0.9rem;
+	padding-left: 0px;
+	text-align: center;
+}
+
+div#status span.Type1 {
+	color: #7E2221;
+	font-weight: bold;
+}
+
+div#status span.Type2 {
+	color: GREEN;
+	font-weight: bold;
+}
+
+div#status tr.finish {
+	color: #BDBDBD;
+}
+
+div#status tr.await {
+	color: #333333;
+}
+
+
+	.modifySchedule a, button,
+	.changeSchedule a, button {
+		cursor: pointer;
+	}
+
+	.modifySchedule,
+	.changeSchedule {
+		position:absolute;
+		top:40%;
+		left:50%;
+		margin-left:-430px;
+		margin-top:-230px;
+		width:860px;
+		background:#FFF;
+		padding:20px;
+		text-align: center;
+		display: none;
+		z-index: 99999999;
+	}
+
+	.changeCal {
+		border-collapse: collapse;
+		border: 1px solid #999999;
+		width: 48%;
+		height: auto;
+		text-align: center;
+		font-size: 0.8rem;
+		float: left;
+		margin-bottom: 15px;
+	}
+
+	.changeCal td {
+		padding: 10px 0px;
+	}
+
+	.changeTime {
+		border-collapse: collapse;
+		border: 1px solid #999999;
+		width: 48%;
+		height: auto;
+		text-align: center;
+		font-size: 0.8rem;
+		float: right;
+	}
+
+	.changeTime table {
+		width: 90%;
+		height: auto;
+		margin: 26px auto;
+		text-align: center;
+		word-break: break-all;
+	}
+
+	.changeTime input {
+		width: 100%;
+		height: auto;
+		font-size: 0.8rem;
+		border: 1px solid #DADADA;
+		padding: 8px 0px;
+		text-align: center;
+	}
+
+	.mypage_memo {
+		overflow: hidden;
+		background: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png") no-repeat right;
+		background-size: 20px;
+		display: inline-block;
+		height: auto;
+		border: 1px solid #DADADA;
+		padding: 8px 5px;
+		text-align: center;
+		font-size: 0.8rem;
+		margin: 0px auto;
+		margin-top: 3px;
+	}
+
+	.mypage_memo select {
+		background: transparent;
+		margin: 0px auto;
+		width: 95%;
+		outline: none;
+		border: none;
+		height: 100%;
+		-webkit-appearance: none;
+	}
+
+	.changeSchedule_date { background:#F5F6F7;color:#000;font-weight:bold; }
+
+	.DelSchedule1,
+	.DelSchedule2,
+	.DelSchedule3 { width:30px;height:32px;margin:0px;padding:0px;background:#FFF;border:1px solid #DADADA;line-height:32px;font-size:1.5rem;color:#FEA45A; }
+
+	.changeTimeTitle { width:100%;background:#F5F6F7;margin:0px auto;padding:20px 0px; }
+
+	.originalSchedule { clear:left;width: 43%;font-size: 0.75rem;background: #F5F6F7;border: 1px solid #DADADA;margin-top: 10px;padding: 10px 20px; }
+	.SchedulePreList { background:#F5F6F7;color:#000;font-weight:bold;width: 98.7%; }
+
+	.AddSchedule { width:30px;height:32px;margin:0px;padding:0px;background:#FFF;border:1px solid #DADADA;line-height:32px;font-size:1.5rem;color:#FEA45A; }
+
+	.alterChange { display:block;width:245px;height:33px;border:1px solid #FEA45A;background:#FEA45A;color:#FFF;font-size:0.9rem;margin:0px auto; }
+	.deleteChange { display:block;width:245px;height:33px;border:1px solid #999999;background:#999999;color:#FFF;font-size:0.9rem;margin:10px auto; }
+	.modifyChange { display:block;width:245px;height:33px;border:1px solid #FEA45A;background:#FEA45A;color:#FFF;font-size:0.9rem;margin:0px auto; }
+	.cancelChange { display:block;width:245px;height:33px;border:1px solid #999999;background:#999999;color:#FFF;font-size:0.9rem;margin:10px auto; }

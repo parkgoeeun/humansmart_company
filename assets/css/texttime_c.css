@@ -1,0 +1,1093 @@
+    html, head, body { height: 100%; font-size: 100%; overflow: hidden; }
+    /** { font-family: 'NotoSans' !important; }*/
+
+    /**********************************
+    * 텍스트 테라피 페이지 전용 메뉴
+    **********************************/
+    .texttime_header {
+        z-index: 60;
+        background: #FEA45A;
+        color: #FFFFFF;
+        width: 100%;
+        height: 7%;
+    }
+
+    .texttime_header a {
+        color: #FFFFFF !important;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .texttime_logo {
+        float: left;
+        height: 100%;
+    }
+
+    .logo {
+        width: 100px;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+
+    .texttime_menu {
+        float: right;
+        height: 100%;
+    }
+
+    .texttime_menu_table {
+        height: 100%;
+    }
+
+    .t_menu {
+        width: auto;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    /*******************************/
+
+    .wrapper {
+        width: 100%;
+        height: 93%;
+        margin: 0px auto;
+        position: relative;
+        overflow: hidden;
+        border-right: 1px solid #EDEDED;
+        background-color: #FCFCFC;
+    }
+
+    @media(min-width: 1681px){
+
+        .counseling {
+            /*width: 80%;*/
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            position: relative;
+            border-left: 2px solid #EDEDED;
+            overflow: hidden;
+        }
+
+    }
+
+    @media(max-width: 1680px){
+
+        .counseling {
+            /*width: 90%;*/
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            position: relative;
+            border-left: 2px solid #EDEDED;
+            overflow: hidden;
+        }
+
+    }
+
+   @media(max-width: 1440px){
+
+        .counseling {
+            /*width: 100%;*/
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            position: relative;
+        }
+
+    }
+
+   @media(max-width: 1024px){
+
+        .counseling {
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            position: relative;
+        }
+
+        .cal1 .clndr .clndr-controls .month {
+            font-size: 15px;
+        }
+
+    }
+
+    .counseling_profile {
+        height: 100%;
+        width: 20%;
+        background-color: #f5f5f5;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        z-index: 50;
+    }
+
+    .counseling_menu {
+        position: absolute;
+        display: block;
+        top: -50px;
+        left: 0px;
+        z-index: 49;
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .counseling_menu li {
+        list-style: none;
+        height: 40px;
+        width: 95px;
+        position: relative;
+        top: 80px;
+        z-index: 49;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 25px;
+    }
+
+    .counseling_menu_img {
+        z-index: 1 !important;
+        width: 100%;
+    }
+
+    .counseling_chat {
+        height: 100%;
+        width: 80%;
+        float: right;
+        border-collapse: collapse;
+        position: relative;
+        overflow-y: scroll;
+        margin: 0px auto;
+        border-left: 2px solid #EDEDED;
+        border-right: 2px solid #EDEDED;
+        table-layout: fixed;
+    }
+
+    .counseling_chat_ {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .counseling_chat .more {
+        width: 100%;
+        text-align: center;
+        border-right: 1px solid #EDEDED;
+    }
+
+    .counseling_chat .more img {
+        z-index:9999;
+    }
+
+    .menu_clicked {
+        z-index: 999;
+    }
+
+    /*****************************
+    * MyPAGE_6 - My Profile
+    *****************************/
+    #mypage_page6 {
+        display: none;
+        width: 100%;
+        height: 92%;
+        text-align: center;
+        overflow: hidden;
+        overflow-y:scroll;
+    }
+
+    #mypage_page6 .title {
+        margin: 0px auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #999999;
+        font-size: 0.95rem;
+    }
+
+    #mypage_page6 .infoClient { width:100%;border-top:1px solid #98897F;border-bottom:1px solid #98897F;margin:0px auto;font-size:0.9rem;line-height:1.4rem;background:#FFF;border-collapse:collapse;word-break;break-all; }
+    #mypage_page6 .infoClient td.title { padding:0px 0px 9px 15px;vertical-align:top;text-align:left;color:#98897F; }
+    #mypage_page6 .infoClient td.content { padding:0px 15px 9px 0px;vertical-align:top;text-align:right;color:#301D09; }
+    #mypage_page6 .infoSchedule { width:100%;color:#333333;padding:40px 0px;height:auto;vertical-align:middle;min-height:200px;border-top:1px solid #98897F;border-bottom:1px solid #98897F;margin:0px auto;font-size:0.9rem;line-height:1.4rem;background:#FFF;border-collapse:collapse; }
+    #mypage_page6 button { width:150px;height:30px;margin-top:25px;font-size:0.9rem;background:#FEA45A;color:#FFF;cursor:pointer !important; }
+    #mypage_page6 .infoPartner hr { width:80%;margin: 0px;margin:7px 0px; }
+
+    /*****************************
+    * MyPAGE_1
+    *****************************/
+    #mypage_page1 {
+        display: none;
+        width: 100%;
+        height: 92%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #mypage_page1 .title {
+        margin: 0px auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #999999;
+        font-size: 0.95rem;
+    }
+
+    #mypage_page1 .partner_img {
+        width: 80px;
+        height: 80px;
+        padding: 0px;
+        /*margin: 10px 0px;*/
+        border-radius: 50%;
+    }
+
+    #mypage_page1 .infoPartner { background:#FFFFFF;width:100%;font-size:0.9rem;line-height:1.4rem;text-align:left;margin-bottom:25px; }
+    #mypage_page1 .infoPartner > td { padding:15px 0px 15px 15px;width:95px; }
+    #mypage_page1 .infoPartner .info_right { padding-left:10px;text-align:left; }
+    #mypage_page1 .infoMessage { margin-top:25px;width:80%;height:150px;padding:10px 0px 10px 10px;background:#FFF;border:1px solid #98897F;border-radius:10px;margin:0px auto;text-align:left;font-size:0.85rem;overflow-x:hiddne;overflow-y:scroll; }
+    #mypage_page1 .infoMessage p.title { color:#98979F; }
+    #mypage_page1 .infoMessage p.content { line-height: 1.25rem;width:95%; }
+    #mypage_page1 .infoCareer { margin-top:25px;width:80%;height:150px;padding:10px 0px 10px 10px;background:#FFF;border:1px solid #98897F;border-radius:10px;margin:0px auto;text-align:left;font-size:0.85rem;overflow-x:hiddne;overflow-y:scroll; }
+    #mypage_page1 .infoCareer > p { color:#98979F; }
+
+/*
+    #mypage_page1 h1 {
+        color: #626262;
+        margin: 20px auto;
+        padding-top: 10px;
+        font-size: 28px;
+        width: 80%;
+        font-weight: 300;
+    }
+
+    #mypage_page1 h3 {
+        color: #626262;
+        font-size: 16px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        padding: 10px 0px 0px 0px;
+        border-top: 3px solid #979797;
+        width: 130px;
+    }
+
+    #mypage_page1 button {
+        border: none;
+        background: #FEA45A;
+        color: #FFFFFF;
+        width: 150px;
+        height: 25px;
+    }
+
+    #mypage_page1 hr {
+        width: 85%;
+        margin: 0px auto;
+        height: 1px;
+        border: none;
+        background: #333;
+        opacity: 0.2;
+    }
+
+    .p_intro {
+        color: #636363;
+        font-size: 13px;
+        margin: 0px 30px;
+        line-height: 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    .p_b {
+        background: #FEA45A;
+        color: #FFFFFF;
+        font-size: 14px;
+        padding: 10px 60px;
+        text-decoration: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }*/
+
+    /*****************************
+    * MyPAGE_2
+    *****************************/
+    #mypage_page2 {
+        display: none;
+        width: 100%;
+        height: 92%;
+        text-align: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #mypage_page2 .title {
+        margin: 0px auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #999999;
+        font-size: 0.95rem;
+    }
+
+    #mypage_page2 .historyCal {
+        border-collapse: collapse;
+        width: 100%;
+        background: #FFF;
+        color: #301D09;
+        font-size: 0.7rem;
+    }
+
+    #mypage_page2 .historyCal td {
+        padding: 5px 0px;
+    }
+
+    #mypage_page2 .historyCal span a {
+        text-decoration:none;color:#000;font-size:1rem;
+    }
+
+    #mypage_page2 .cal1_ {
+        margin: 0px auto;
+        background: #FFFFFF;
+        padding-top: 1px;
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    #mypage_page2 .cal1_p {
+        text-align: left;
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 10px;
+        font-size: 0.625rem;
+        line-height: 0.8rem;
+        color: #808080;
+        font-weight: bold;
+    }
+
+    #mypage_page2 .cal_hr {
+        width: 85%;
+        margin: 0px auto;
+        height: 1px;
+        border: none;
+        background: #333;
+        opacity: 0.2;
+    }
+
+    #mypage_page2 .calender {
+        width: 100%;
+        height: 55%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #mypage_page2 .counseling_date {
+        width: 100%;
+        height: auto;
+        border-spacing: none;
+        border-collapse: collapse;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #mypage_page2 .h_chat_log_p {
+        float: right;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        font-size: 12px;
+        color: #000000;
+    }
+
+    #mypage_page2 .h_chat_log_p_ {
+        float: right;
+        width: 50%;
+        border: 1px solid #FEA45A;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        line-height: 160%;
+        right: 0px;
+        position: relative;
+        margin-left: 5.5rem;
+    }
+
+    #mypage_page2 .h_chat_log_c {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        font-size: 12px;
+        color: #000000;
+    }
+
+    #mypage_page2 .h_chat_log_c_ {
+        width: 50%;
+        position: relative;
+        border: 1px solid #7F7F7F;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        line-height: 160%;
+    }
+
+    #mypage_page2 .h_p {
+        padding: 5px;
+        text-align: left;
+     }
+
+    #mypage_page2 .h_c {
+        padding: 5px;
+        text-align: left;
+    }
+
+    #mypage_page2 .h_p_ {
+        text-align: right;
+        color: #656565;
+        font-size: 10px;
+        float: none;
+        clear: both;
+        line-height: 18px;
+        margin-bottom: 8px;
+    }
+
+    #mypage_page2 .h_c_ {
+        text-align: left;
+        margin-top: 4px;
+        margin-right: 40px;
+        color: #656565;
+        font-size: 10px;
+    }
+
+    /*****************************
+    * MyPAGE_3
+    *****************************/
+    #mypage_page3 {
+        display: none;
+
+        width: 100%;
+        height: 92%;
+
+        padding-top: 50px;
+        text-align: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #mypage_page3 h3 {
+        font-size: 0.90rem;
+        color: #4d4d4d;
+    }
+
+    #mypage_page3 p {
+        font-size: 0.85rem;
+        color: #b3b3b3;
+        margin-bottom: 1.5rem;
+    }
+
+    @media(max-width: 1440px){
+
+        #mypage_page3 h3 {
+            font-size: 0.9rem;
+        }
+
+        #mypage_page3 p {
+            font-size: 0.8rem;
+        }
+
+    }
+
+    @media(max-width: 1280px){
+
+        #mypage_page3 h3 {
+            font-size: 0.8rem;
+        }
+
+        #mypage_page3 p {
+            font-size: 0.75rem;
+        }
+
+    }
+
+    @media(max-width: 1024px){
+
+        #mypage_page3 h3 {
+            font-size: 0.65rem;
+        }
+
+        #mypage_page3 p {
+            font-size: 0.6rem;
+        }
+
+    }
+
+    #mypage_page3 .payway {
+        width: 70%;
+        height: 5rem;
+        font-size: 0.75rem;
+        border: 1px solid #808080;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-weight: 100;
+        cursor: pointer;
+        background: #FFFFFF;
+    }
+
+    .dopay {
+        color: #FFFFFF;
+        font-size: 14px;
+        margin: 0px auto;
+        width: 70%;
+        height: 2.5rem;
+        margin-bottom: 10px;
+        line-height: 20px;
+        padding-top: 0px;
+        background: #FEA45A;
+        font-weight: 300;
+        border: 0px;
+    }
+
+    @media(max-width: 1024px){
+
+        .payway {
+            font-size: 0.65rem;
+        }
+
+    }
+
+    #mypage_page3 button, a {
+        outline: none;
+    }
+
+    /*****************************
+    * MyPAGE_4
+    *****************************/
+/*    #mypage_page4 {
+        display: none;
+
+        width: 100%;
+        height: 92%;
+
+        padding-top: 50px;
+        text-align: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #mypage_page4 h3 {
+        font-size: 0.95rem;
+        color: #4d4d4d;
+    }
+
+    #mypage_page4 p {
+        font-size: 0.85rem;
+        color: #b3b3b3;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 1440px) {
+
+        #mypage_page4 h3 {
+            font-size: 0.9rem;
+        }
+
+        #mypage_page4 p {
+            font-size: 0.8rem;
+        }
+
+
+    }
+
+    @media(max-width: 1280px){
+
+        #mypage_page4 h3 {
+            font-size: 0.8rem;
+        }
+
+        #mypage_page4 p {
+            font-size: 0.75rem;
+        }
+
+    }
+
+    .v_payway1 {
+        width: 70%;
+        height: 5rem;
+        font-size: 0.75rem;
+        border: 1px solid #FEA45A;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        background: #FFFFFF;
+    }
+
+    .v_payway2 {
+        width: 70%;
+        height: 5rem;
+        font-size: 0.75rem;
+        border: 1px solid #808080;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        background: #FFFFFF;
+    }
+
+    .payment_f_date_1 {
+        background: transparent;
+        width: 15%;
+        height: 10px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+        padding: 10px;
+        vertical-align: top;
+        margin-right: 0.3rem;
+    }
+
+    .payment_f_date_2 {
+        width: 22%;
+        height: 32px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+        vertical-align: top;
+        margin-right: 0.3rem;
+    }
+
+    .payment_f_date_3 {
+        width: 22%;
+        height: 32px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+        vertical-align: top;
+    }
+
+    .payment_f_date_4 {
+        width: 75%;
+        height: 32px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+        vertical-align: top;
+    }
+
+    #mypage_page4 button, a {
+        outline: none;
+    }*/
+
+    /*****************************
+    * MyPAGE_5 - My Profile
+    *****************************/
+    #mypage_page5 {
+        display: none;
+        width: 100%;
+        height: 92%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #mypage_page5 .title {
+        margin: 0px auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #999999;
+        font-size: 0.95rem;
+    }
+
+    #mypage_page5 button {
+        outline: none;
+        border: 0px;
+        width: 70%;
+        height: 40px;
+        background: #FEA45A;
+        color: #FFFFFF;
+        font-size: 0.95rem;
+        cursor: pointer;
+    }
+
+    #mypage_page5 a {
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    #mypage_page5 iframe {
+        width:97%;height:70%;overflow-x:hidden;overflow-y:scroll;border:none;margin:0px auto;margin-bottom:15px;
+    }
+
+    /*********************************
+    * Counseller text
+    *********************************/
+    .chat_log_c {
+        position: relative;
+        left: 80px;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        font-size: 0.9rem;
+        line-height: 1.45rem;
+        color: #040000;
+        padding-bottom: 2%;
+    }
+
+    .chat_log_c_ {
+        position: relative;
+        width: 100%;
+        max-width: 45%;
+        border: 1px solid rgba(127,127,127, 0.5);
+        background: #FFFFFF;
+        word-break: break-all;
+    }
+
+    .chat_log_c_:after, .chat_log_c_:before {
+        right: 100%;
+        top: 15px;
+        border: solid transparent;
+        content: " ";
+        position: absolute;
+    }
+
+    .chat_log_c_:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: #FFFFFF;
+        border-width: 10px;
+        margin-top: -10px;
+    }
+
+    .chat_log_c_:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-right-color: rgba(127,127,127, 0.5);
+        border-width: 11px;
+        margin-top: -11px;
+    }
+
+    .c_p {
+        text-align: left;
+        margin-top: 4px;
+        margin-left: 100px;
+        color: #999999;
+        font-size:12px;
+    }
+
+    .chat_log_p {
+        position: relative;
+        left: -8px;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        font-size: 0.9rem;
+        line-height: 1.45rem;
+        color: #040000;
+        padding-bottom: 2%;
+    }
+
+    .chat_log_p_ {
+        float: right;
+        width: 100%;
+        max-width: 50%;
+        position: relative;
+        right: 30px;
+        border: 1px solid rgba(255,179,71, 0.5);
+        background: #FFFFFF;
+        word-break: break-all;
+    }
+
+    .chat_log_p_:after, .chat_log_p_:before {
+        left: 100%;
+        top: 15px;
+        border: solid transparent;
+        content: " ";
+        position: absolute;
+    }
+
+    .chat_log_p_:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-left-color: #FFFFFF;
+        border-width: 10px;
+        margin-top: -10px;
+    }
+    .chat_log_p_:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-left-color: rgba(255,179,71, 0.7);
+        border-width: 11px;
+        margin-top: -11px;
+    }
+
+    .p_p {
+        text-align: right;
+        margin-right: 30px;
+        color: #999999;
+        font-size: 12px;
+        float: none;
+        clear: both;
+        line-height: 25px;
+        margin-bottom: 6px;
+    }
+
+    #p_circle {
+        position: relative;
+        float: right;
+        left: 56%;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        background: #ededed;
+        opacity: 1;
+        border: 0px;
+        border-radius: 50%;
+        z-index: 70;
+    }
+
+    /*********************************
+    * TROST System Message
+    *********************************/
+    .chat_log_tc {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        font-size: 0.9rem;
+        line-height: 1.45rem;
+        font-weight: normal;
+        padding: 0.8rem;
+        color: #000;
+    }
+
+    .chat_log_tc_ {
+        margin: 0px auto;
+        width: 55%;
+        background-color: #FEA45A;
+        padding: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    #chatLog {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .texttime_b1, .texttime_b3, .texttime_b4 {
+        margin: 0px 3px;
+        width: 49px;
+        height: 49px;
+    }
+
+    .p_emergency {
+        width: 20%;
+        display: inline;
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        color: rgba(93, 63, 28, 0.5);
+        padding: 0px 0px 20px 0px;
+    }
+
+    .chat_submit {
+        width: 85%;
+        border-top: 6px solid #EDEDED;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    #message {
+        width: 85%;
+        padding: 10px 0px 0px 10px;
+        background: transparent;
+        font-size: 1.1rem;
+        vertical-align: middle;
+        outline: 0;
+        border: none;
+        overflow: visible;
+        position: relative;
+        bottom: 0px;
+        height: 65px;
+        min-height: 65px;
+        max-height: 250px;
+    }
+
+    .b_send {
+        cursor: pointer !important;
+        width: 3rem;
+        vertical-align: middle;
+        margin-left: 3.5%;
+        margin:0px auto;
+    }
+
+    #messageSendBox { overflow-y:scroll;display:inline-block;width:80%;padding:10px 0px 0px 5px;vertical-align:middle;height:100%;border:none;outline:none; }
+    #messageSendTab { overflow-y:none;display:inline-block;width:auto;vertical-align:middle;line-height:80px;height:100%;border:none;outline:none; }
+    #messageSendTab #emotion_tab { width: 50px;vertical-align: middle;margin: 0 1rem; }
+
+    #emotion_box { display:none;position:absolute;bottom:90px;right:125px;width:300px;height:150px;border:2px solid #FEA45A;border-radius:8px;z-index:99999;padding:15px 10px 10px 10px;background:#FFF; }
+    #emotion_box table { width:100%;height:100%;border-collapse:collapse;text-align:center;vertical-align:middle; }
+    #emotion_box img { width:40px; }
+	#emotion_box:after, #emotion_box:before { top: 100%;left: 87%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none; }
+    #emotion_box:after { border-color: rgba(255, 255, 255, 0); border-top-color: #FFF; border-width: 10px; margin-left: -22px; }
+    #emotion_box:before { border-color: rgba(254, 164, 90, 0); border-top-color: #FEA45A; border-width: 13px; margin-left: -25px; }
+
+    /*************************
+    * 상담 페이지 내 이미지.
+    *************************/
+    .imoji_sm {
+        height:23px;
+        margin:0px 2px;
+        vertical-align:bottom;
+    }
+
+    .imoji_big {
+        height:80px;
+        margin-top:-15px;
+        vertical-align:bottom;
+    }
+
+    .p_profile_img {
+        float:left;
+        width:50px;
+        margin-left:30px;
+        margin-right:20px;
+        vertical-align:middle;
+        border-radius:50%;
+    }
+
+    .p_profile_name {
+        position:absolute;
+        left:39px;
+        top:60px;
+        font-size:0.8rem;
+    }
+    /************************/
+
+    .opacityBg { display:none;position:fixed;z-index:15896480;top:0px;background: rgba(000, 000, 000, 0.8);width:100%;height:100%; }
+    .opacityBgA { display:none;position:fixed;z-index:15896480;top:0px;background: rgba(000, 000, 000, 0.8);width:100%;height:100%; }
+
+    /* 시스템 메세지 애니메이션 */
+	tr.sysMsgAnimation { text-align: center; padding: 15px 0px; }
+	tr.sysMsgAnimation img { width: 40px !important; }
+
+    /* 상담 로딩 애니메이션 */
+    div.loader {
+		height: 100px;
+		width: 100px;
+		border: 6px solid #fff;
+		border-right-color: #FEA45C;
+		border-top-color: #FEA45C;
+		border-radius: 100%;
+		border-width: 13px;
+		-webkit-animation: spin 800ms infinite linear;
+		animation: spin 800ms infinite linear;
+		z-index: 15896485;
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		margin-top: -50px;
+		margin-left: -50px;
+		display: none;
+	}
+
+	p.loader {
+		z-index: 15896485;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-left: -150px;
+		display: none;
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: #FFF;
+	}
+
+	@-webkit-keyframes "spin" {
+		from {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		to {
+			-webkit-transform: rotate(359deg);
+			transform: rotate(359deg);
+		}
+	}
+
+	@keyframes "spin" {
+		from {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		to {
+			-webkit-transform: rotate(359deg);
+			transform: rotate(359deg);
+		}
+	}
+
+    /* 상담 동의서 */
+    .counselingAgree { display:none;z-index:15896487;width:600px;height:500px;padding:20px;background:#FFF;position:absolute;top:50%;left:50%;margin-top:-250px;margin-left:-300px;text-align:center;line-height:1.5rem;font-size:1rem;border:1px solid #98897F; }
+    .counselingAgree h1 { font-size:1.4rem; }
+    .counselingAgree textarea { width:80%;overflow-x:hidden;overflow-y:scroll;background:#F4F6F7;display:block;margin:20px auto;text-align:left;font-size:1rem;height:300px;padding:15px;line-height:1.5rem; }
+    .counselingAgree .counseling_terms { vertical-align:middle;margin-right:5px;margin-bottom:2px; }
+    .counselingAgree .agreebtn { background:#FEA45A;color:#FFF;height:35px;width:180px;font-size:1rem;display:block;margin:0px auto;margin-top:10px; }
+    /* 상담 동의서 */
+
+    /* 상담 리뷰 작성 */
+    /*.finishReview { width:700px;height:auto;padding:20px;background:#fbf7ef;position:absolute;z-index:9999;top:48%;left:50%;margin-top:-390px;margin-left:-400px;text-align:center;border:1px solid #98897F; }*/
+    .finishReview { width:700px;height:auto;padding:5px 15px;background:#FBF6EE;position:absolute;z-index:9999;top:48%;left:50%;margin-top:-390px;margin-left:-400px;text-align:center; }
+    /*.finishReview * { font-size:0.93rem; }*/
+    /*.finishReview h1 { width:95%;border:1px solid #301D09;font-size:0.93rem;margin:0px auto;text-align:center;padding: 15px 0px; }*/
+    .finishReview h1 { width:95%;font-size:0.93rem;background:transparent;margin:0px auto;text-align:center;padding: 15px 0px; }
+
+    .writeReview { width:95%;height:140px;margin:0px auto;background:#FFF; }
+    .writeReview td { border:1px solid #BDBDBD; }
+    .writeReview textarea { width:98%;height:98%;font-size:0.85rem;line-height:1.35rem; }
+    .writeReview button { width:100%;height:100%;border:transparent;background:transparent;color:#FFF; }
+
+    .writeReview button.selectRecommend {
+        background:#98897F;font-size:0.8rem;width:80px;height:30px;
+    }
+
+    .writeReview button.select {
+        background:#FEA45A;
+    }
+
+    ul.viral_logo {
+        padding: 0px;
+        margin: 0px auto;
+    }
+
+    ul.viral_logo li {
+        list-style: none;
+        padding: 0px;
+        margin: 0px 10px;
+        display: inline;
+    }
+
+    ul.viral_logo img {
+        width: 40px;
+        vertical-align: middle;
+    }
+
+    .paymentAgain { background:#595757;border:1px solid #595757;width:30%;height:40px;margin-top: 20px;color:#FFF;font-size:0.93rem;margin-right:15px;display:inline-block;text-decoration:none;line-height:40px; }
+    .afterFinish { background:#FFF;border:1px solid #595757;width:30%;height:40px;color:#595757;font-size:0.93rem;margin-left:15px;display:inline-block;text-decoration:none;line-height:40px; }
+    /* 상담 리뷰 작성 */
+
+    /* 유료 결제 시 '실시간 상담 횟수 추가하기' */
+    .addItemCount { position:absolute;top:12%;left:43%;background:#FFF;border:3px solid #FEA45A;width: auto;padding:0px 50px;text-align: center; }
+    .addItemCount p { font-size:1.25rem;vertical-align:middle;color:#FEA45A;font-weight:bold; }
+    #openAddItemCount { background: #FEA45A;color: #FFF;font-size: 1.25rem;padding: 10px 15px;margin-left: 100px; }
+
+    .addItemCountPopup { display:none;z-index:15896485;border-radius:10px;position:absolute;top:50%;left:50%;margin-left:-250px;margin-top:-224px;background:#FFF;border:3px solid #FEA45A;width: auto;padding:0px 50px;text-align: center;width:450px; }
+    .addItemCountPopup h2 { color:#FEA45A;margin:50px 0px 0px 0px; }
+    .addItemCountPopup hr { border: 1px solid #FEA45A;margin: 20px auto; }
+    .addItemCountPopup table { width: 70%;margin: 0px auto;font-size: 1.2rem;height:100px;margin-bottom:35px; }
+    .addItemCountPopup .notice_title { font-weight:bold;font-size:1.1rem; }
+    .addItemCountPopup .notice_content { text-align: left;font-size: 0.85rem;line-height: 1.4rem; }
+
+    #moveAddItemCount { background: #FEA45A;color: #FFF;font-size: 1.25rem;padding: 10px 15px;border-radius:10px;margin: 15px auto; }
+
+    div#typingID::before {
+        border-color: transparent;
+        border-right-color: rgba(127,127,127,.5);
+        border-width: 11px;
+        margin-top: -11px;
+    }
+
+    div#typingID::after,
+    div#typingID::before {
+        right: 100%;
+        top: 15px;
+        border: solid transparent;
+        content: " ";
+        position: absolute;
+    }

@@ -1,0 +1,172 @@
+html, head, body { height: 100%; font-size: 100%; }
+
+.texttime_header {
+z-index: 60;
+background: #FEA45A;
+color: #FFFFFF;
+width: 100%;
+height: 7%;
+}
+
+.texttime_header a {
+color: #FFFFFF !important;
+font-size: 13px;
+font-weight: 300;
+}
+
+.texttime_logo {
+float: left;
+height: 100%;
+}
+
+.logo {
+width: 100px;
+padding-top: 10%;
+padding-left: 10%;
+}
+
+.texttime_menu {
+float: right;
+height: 100%;
+}
+
+.texttime_menu_table {
+height: 100%;
+}
+
+.t_menu {
+width: auto;
+color: #FFFFFF;
+text-align: center;
+}
+
+.themeOfSelect select {
+background: transparent;
+margin: 0px auto;
+width: 95%;
+font-size: 12pt;
+outline: none;
+border: none;
+height: 100%;
+-webkit-appearance: none;
+}
+
+.themeOfSelect {
+overflow: hidden;
+text-align: center;
+padding: 8px 5px;
+background: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png") no-repeat right;
+background-size: 40px;
+display:inline-block;
+width:225px;
+height:60px;
+border:2px solid #BCBEC0;
+font-size:1rem;
+color:#58595B;
+vertical-align:middle;
+}
+
+.paymentItem:hover {
+opacity: 0.8;
+}
+
+.wrapper { width:1024px;height:auto;margin:50px auto;background:#FCF7F0;border:1px solid #98897F;text-align:center;padding:40px 0px; }
+.wrapper h4 { margin:0px auto;margin-bottom:30px;font-size:1.2rem; }
+
+.info_partner { width:90%;font-size:0.9rem;line-height:1.4rem;border-collapse:collapse;border:1px solid #98897F;margin:0px auto;margin-bottom:25px; }
+.info_partner thead { text-align:center;border:1px solid #98897F; }
+.info_partner thead td { width:50%;background:#F5F5F5;color:#98897F;font-weight:bold;font-size:1.1rem;padding: 15px 0px; }
+.info_partner tbody { text-align:left;border:1px solid #98897F; }
+.info_partner tbody td { padding:30px 45px;vertical-align:top; }
+.info_partner .info_layer img { display:inline-block;vertical-align:middle;float:left;margin-right:20px;width:150px; }
+.info_partner .info_layer p { margin:0px;padding-top:25px;font-size:1.1rem;font-weight:bold; }
+.info_partner .info_layer hr { width:40%;margin:15px 0px 15px 0px;padding:0px; }
+.info_partner .career_layer p { margin:0px 0px 3px 0px; }
+.info_payment_left { display:inline-block;width:552px;margin:0px auto;vertical-align:bottom; }
+.info_payment_right { display:inline-block;width:385px;margin:0px auto;vertical-align:bottom; }
+.info_payment_left h4, .info_payment_right h4 { margin:15px auto;font-size:1.2rem;line-height:1.5rem;font-weight:bold; }
+.info_payment_left img, .info_payment_right img { width:96%; }
+.info_payment { width:90%;background:#FEA45A;margin:0px auto;padding:15px 0px;margin-top:50px; }
+.info_payment h4 { margin:15px auto;font-size:1.1rem;color:#FFF; }
+.info_payment table { width:100%;margin-bottom:20px; }
+.info_payment img { width:90%;cursor:pointer; }
+
+.payment_bill { width:90%;background:#FFFFFF;margin:0px auto;margin-top:50px; }
+.payment_bill h4 { font-size:1.1rem;color:#FFF;background:#999999;padding:15px 0px; }
+.paymentInfoOfTicket { width:50%;padding:0px 0px 20px 0px;margin:0px auto; }
+.paymentCheckImage { width:100%; }
+.paymentCheckState { font-size:0.9rem;line-height:1.4rem; }
+
+.paymentInfoOfCoupon { width:47%;padding:20px 0px;margin:0px auto; }
+.paymentInfoOfCoupon table { width:100%;border-collapse:collapse; }
+.coupon_title { font-size:1rem;vertical-align:middle;font-weight:bold; }
+.coupon_info { font-size:0.9rem;padding-left:15px;color:#FEA45A;vertical-align:middle;text-align:left; }
+.linkForCoupon { text-decoration:none;color:#FEA45A;vertical-align:middle;cursor:pointer; }
+.linkForCoupon span { float:right; }
+
+.coupon_content_1 { font-size:0.9rem;padding-left:15px;color:#999999;vertical-align:middle;text-align:left; }
+
+.paymentInfoOfPrice { width:47%;padding:20px 0px;margin:0px auto; }
+.paymentInfoOfPrice table { width:100%;border-collapse:collapse; }
+
+.price_original { color:#999999;font-size:0.8rem;font-weight:bold;width:50%;vertical-align:bottom;text-align:left;padding:0px 0px 20px 0px; }
+.price_original_payment { color:#000000;font-size:1.1rem;color:#999999;font-weight:bold;text-align:right;width:70%;vertical-align:bottom;padding:0px 0px 20px 0px; }
+
+.price_discount { color:#999999;font-size:0.8rem;font-weight:bold;width:50%;vertical-align:bottom;text-align:left;padding:0px 0px 20px 0px; }
+.price_discount_payment { color:#000000;font-size:1rem;color:#FEA45A;text-align:right;width:70%;vertical-align:bottom;padding:0px 0px 20px 0px; }
+
+.price_coupon { color:#999999;font-size:0.8rem;font-weight:bold;width:50%;vertical-align:bottom;text-align:left;padding:0px; }
+.price_coupon_payment { color:#000000;font-size:1rem;color:#FEA45A;text-align:right;width:70%;vertical-align:bottom;padding:0px; }
+.price_total { color:#999999;font-size:0.8rem;font-weight:bold;width:50%;vertical-align:bottom;text-align:left;padding:0px 0px 20px 0px;color:RED; }
+.price_total_payment { color:#000000;font-size:1.3rem;font-weight:bold;color:RED;text-align:right;width:70%;vertical-align:bottom;padding:0px 0px 20px 0px; }
+
+.paymentInfoOfPaymethod { width:100%;height:auto;margin:0px auto;vertical-align:middle;padding:25px 0px; }
+/*.paymentInfoOfPaymethod .themeOfSelect { display:inline-block;width:225px;height:60px;border:2px solid #BCBEC0;font-size:1rem;color:#58595B;vertical-align:middle; }*/
+.inputPaymentInfo { display:inline-block;vertical-align:middle; }
+.inputPaymentInfo .buyerChangeInfo { width:220px;border:1px solid #999999;padding:10px 20px;font-size:0.9rem; }
+.inputPaymentInfo .buyerChangeInfo_ { width:220px;border:1px solid #999999;padding:10px 20px;font-size:0.9rem;margin-top:5px; }
+.inputPaymentInfo .paymentSubmit { width:100px;height:81px;background:#FEA45A;color:#FFF;font-size:1.1rem; }
+.inputPaymentInfo .paymentSubmitCoupon { width:100px;height:81px;background:#FEA45A;color:#FFF;font-size:1.1rem;display:none; }
+
+#plusItemCount { position: absolute;margin-top: 149px;margin-left: -286px;background:transparent;color:transparent; }
+#numItemCount { position: absolute;margin-top: 147px;margin-left: -326px;background: transparent;color: #000;border: 2px solid #BBBDBF;width: 13px;font-size: 0.7rem;padding: 2px;text-align: center;vertical-align: middle; }
+#decreaseItemCount { position: absolute;margin-top: 149px;margin-left: -365px;background:transparent;color:transparent; }
+
+.infoSys { display:none;font-size:1.3rem;line-height:2rem; }
+
+#opacityBg {
+	display: none;
+	position: fixed;
+	z-index: 99;
+	top: 0px;
+	background: rgba(000, 000, 000, 0.8);
+	width: 100%;
+	height: 100%;
+}
+
+.moreGuideitemPop {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	width: 500px !important;
+	margin-left: -200px;
+	z-index: 100;
+	display: none;
+}
+
+.moreGuideitemBtn {
+	position: absolute;
+	width: 100px !important;
+	margin-top:130px;
+	margin-left:20px;
+	z-index:99;
+}
+
+.moreGuideClose {
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 25px !important;
+	z-index: 201;
+}

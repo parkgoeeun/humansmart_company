@@ -1,0 +1,65 @@
+
+    html, head { width: 100%; height: 100%; }
+    body { width: 100%; height: 100%; background:#7F7F7F; overflow: hidden; }
+
+    * { 
+        border:none; 
+    } 
+
+    .wrapper { 
+        width: 1024px;
+        height: 92%;
+        padding: 0px;
+        margin: 0px auto;
+        background: #7F7F7F; 
+    }
+
+    .row { 
+        height: 100%; 
+    }
+    
+    .col-md-2 { 
+        float: right;
+        width: 250px;
+        background: #4D4D4D;
+        height: 244px; 
+        text-align: center;
+    }
+    
+    .col-md-2 h1 { 
+        margin: 0px auto;
+        text-align: center;
+        background: #FFB347;
+        color: #FFFFFF;
+        padding: 15px 0px;
+        font-size: 39px;
+    }
+
+    a { cursor: pointer; }
+    button { cursor: pointer; }
+    
+    .form-group { display:none; }
+    .from-gruop-create { padding:15px 5px;text-align:center; }
+    .from-gruop-finish { padding:15px 5px;text-align:center; }
+
+    #createChannelId { padding:10px 0px;width:65%;font-size:14px;border:none;text-align:center; }
+    #createChannel { background:#FFB347;border:none;font-size:14px;color:#FFFFFF;padding:10px 0px;width:87%; }
+
+    #channelIdInput { padding:10px 0px;width:65%;font-size:14px;border:none;text-align:center; }
+    #connectChannelButton { background:#FFB347;border:none;font-size:14px;color:#FFFFFF;padding:10px 0px;width:87%; }
+
+    #disconnectChannel { margin:0px auto;background:#FFB347;border:none;font-size:14px;color:#FFFFFF;padding:10px 0px;width:83%; }
+    #refresh { margin: 0px auto;background:#FFB347;border:none;font-size:14px;color:#FFFFFF;padding:10px 0px;width:83%; margin-top: 15px;  }
+
+    .footer { padding:0px;margin:0px;clear:both;height:80px;width:100%;background:#2D2D2D;text-align:center; }
+    .footer_ul { padding:0px;margin:0px;color:#CCCCCC;font-size:0.8rem;list-style:none;height:100%;display:table;width:100%; }
+    .footer_li { padding:0px;margin:0px;display:table-cell;border:none;vertical-align:middle;height:100%; }
+    .col-md-7 { width:774px;height:auto;float:left; padding-top: 10%;}
+
+    #localVideo {
+        width:300px;
+        height: 150px;
+        position: relative;
+        left:524px;
+        top: -155px;
+    }

@@ -1,0 +1,868 @@
+html, head, body {
+	height: 100%;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+* {
+	font-family: 'NotoSans' !important;
+}
+
+/**********************************
+* 텍스트 테라피 페이지 전용 메뉴
+**********************************/
+.texttime_header {
+    z-index: 60;
+    background: #FEA45A;
+    color: #FFFFFF;
+    width: 100%;
+    height: 7%;
+}
+
+.texttime_header a {
+    color: #FFFFFF !important;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.texttime_logo {
+    float: left;
+    height: 100%;
+}
+
+.logo {
+    width: 100px;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.texttime_menu {
+    float: right;
+    height: 100%;
+}
+
+.texttime_menu_table {
+    height: 100%;
+}
+
+.t_menu {
+    width: auto;
+    color: #FFFFFF;
+    text-align: center;
+}
+/*******************************/
+
+.wrapper {
+    width: 100%;
+    height: 93%;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid #EDEDED;
+    background-color: #FCFCFC;
+}
+
+@media(min-width: 1681px){
+
+    .counselingMenu {
+        /*width: 80%;*/
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        position: relative;
+        border-left: 2px solid #EDEDED;
+        overflow: hidden;
+    }
+
+}
+
+@media(max-width: 1680px){
+
+    .counselingMenu {
+        /*width: 90%;*/
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        position: relative;
+        border-left: 2px solid #EDEDED;
+        overflow: hidden;
+    }
+
+}
+
+@media(max-width: 1440px){
+
+    .counselingMenu {
+        /*width: 100%;*/
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        position: relative;
+    }
+
+}
+
+@media(max-width: 1024px){
+
+    .counselingMenu {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        position: relative;
+    }
+
+    .cal1 .clndr .clndr-controls .month {
+        font-size: 15px;
+    }
+
+}
+
+.counseling_profile {
+    height: 100%;
+    width: 20%;
+    background-color: rgb(247,247,247);
+    border-right: rgb(237,237,237);
+    position: relative;
+    overflow: hidden;
+    float: left;
+    z-index: 50;
+}
+
+.counseling_menu {
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: 0px;
+    z-index: 49;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.counseling_menu li {
+    list-style: none;
+    height: 40px;
+    width: 95px;
+    position: relative;
+    top: 80px;
+    z-index: 49;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+.counseling_menu_img {
+    z-index: 1 !important;
+    width: 100%;
+}
+
+.counseling_chat {
+    height: 100%;
+    width: 80%;
+    float: right;
+    border-collapse: collapse;
+    position: relative;
+    overflow-y: scroll;
+    margin: 0px auto;
+    border-left: 2px solid #EDEDED;
+    border-right: 2px solid #EDEDED;
+    table-layout: fixed;
+}
+
+.counseling_chat_ {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.counseling_chat .more {
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid #EDEDED;
+}
+
+.counseling_chat .more img {
+    z-index:9999;
+}
+
+.menu_clicked {
+    z-index: 999;
+}
+
+/*****************************
+* MyPAGE_1
+*****************************/
+div.mypage_tabMenu {
+    display: none;
+    overflow-y: scroll;
+    width: 100%;
+    height: 92%;
+    text-align: center;
+}
+
+div.mypage_tabMenu h4.title {
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 1rem;
+}
+
+div.mypage_tabMenu button {
+    min-width: 150px;
+    min-height: 30px;
+    font-size: 0.8rem;
+    background: #FEA45A;
+    color: #FFF;
+}
+
+div.mypage_tabMenu p.Type1 {
+    margin:0px auto;padding-bottom:5px;line-height:100px;margin-bottom:15px;
+}
+
+div.mypage_tabMenu p.Type2 {
+    margin:0px auto;padding-bottom:5px;line-height:100px;margin-bottom:15px;
+}
+
+div.mypage_tabMenu p.Type3 {
+    margin:30px auto;font-size: 0.85rem;width: 80%;line-height: 1.35rem;
+}
+
+div.mypage_tabMenu p.Type4 {
+    background:#301D09;width:100%;padding:20px 0px;color:#FFF;
+}
+
+div.mypage_tabMenu table.tabTable { width:100%;border-top:1px solid #98897F;border-bottom:1px solid #98897F;margin:0px auto;background:#FFF;border-collapse:collapse;overflow:scroll; }
+div.mypage_tabMenu table.tabTable td.left { font-size:0.8rem;padding:0px 0px 9px 15px;vertical-align:top;text-align:left;color:#98897F; }
+div.mypage_tabMenu table.tabTable td.right { font-size:0.8rem;padding:0px 15px 0px 0px;vertical-align:top;text-align:right;color:#301D09; }
+
+div.mypage_tabMenu table.tabTable td.left-2 { font-size:0.8rem;padding:0px 0px 0px 20px;vertical-align:middle;text-align:left;color:#98897F; }
+div.mypage_tabMenu table.tabTable td.right-2 { font-size:0.8rem;padding:0px 20px 0px 0px;vertical-align:middle;text-align:right;color:#301D09; }
+div.mypage_tabMenu table.tabTable td.right-2 .mypage_memo { width:100%;height:15px; }
+
+/*****************************
+* MyPAGE_2
+*****************************/
+#mypage_page2 .historyCal {
+    border-collapse: collapse;
+    width: 100%;
+    background: #FFF;
+    color: #301D09;
+    font-size: 0.7rem;
+}
+
+#mypage_page2 .historyCal td {
+    padding: 5px 0px;
+}
+
+#mypage_page2 .historyCal span a {
+    text-decoration:none;color:#000;font-size:1rem;
+}
+
+.cal1_ {
+    margin: 0px auto;
+    background: #FFFFFF;
+    padding-top: 1px;
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.cal1_p {
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 10px;
+    font-size: 0.65rem;
+    color: #808080;
+    font-weight: bold;
+}
+
+.cal1_p span {
+    color:#FEA45A;font-size:0.9rem;
+}
+
+.cal_hr {
+    width: 85%;
+    margin: 0px auto;
+    height: 1px;
+    border: none;
+    background: #333;
+    opacity: 0.2;
+}
+
+.calender {
+    width: 100%;
+    height: 55%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.counseling_date {
+    width: 100%;
+    height: auto;
+    border-spacing: none;
+    border-collapse: collapse;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.h_chat_log_p {
+    float: right;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    font-size: 12px;
+    color: #000000;
+}
+
+.h_chat_log_p_ {
+    float: right;
+    width: 50%;
+    border: 1px solid #FEA45A;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    line-height: 160%;
+    right: 0px;
+    position: relative;
+    margin-left: 5.5rem;
+}
+
+.h_chat_log_c {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    font-size: 12px;
+    color: #000000;
+}
+
+.h_chat_log_c_ {
+    width: 50%;
+    position: relative;
+    border: 1px solid #7F7F7F;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    line-height: 160%;
+}
+
+.h_p {
+    padding: 5px;
+    text-align: left;
+ }
+
+.h_c {
+    padding: 5px;
+    text-align: left;
+}
+
+.h_p_ {
+    text-align: right;
+    color: #656565;
+    font-size: 10px;
+    float: none;
+    clear: both;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+
+.h_c_ {
+    text-align: left;
+    margin-top: 4px;
+    margin-right: 40px;
+    color: #656565;
+    font-size: 10px;
+}
+
+/*****************************
+* MyPAGE_3
+*****************************/
+.mypage_memo {
+    overflow: hidden;
+    background: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png") no-repeat right;
+    background-size: 20px;
+    display: inline-block;
+    height: auto;
+    border: 1px solid #DADADA;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0px auto;
+    margin-top: 3px;
+}
+
+.mypage_memo select {
+    background: transparent;
+    margin: 0px auto;
+    width: 95%;
+    outline: none;
+    border: none;
+    height: 100%;
+    -webkit-appearance: none;
+}
+
+#mypage_page3 textarea {
+    width: 77%;
+    height: 30rem;
+    border: 1px solid #B3B3B3;
+    background: #F2F2F2;
+    color: #999999;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+#save_status1 {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #4D4D4D;
+}
+
+#save_status2 {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #4D4D4D;
+}
+
+/*****************************
+* MyPAGE_7
+*****************************/
+#mypage_page7 .historyCal {
+    border-collapse: collapse;
+    width: 100%;
+    background: #FFF;
+    color: #301D09;
+    font-size: 0.72rem;
+    border-top:1px solid #98897F;border-bottom:1px solid #98897F;
+}
+
+#mypage_page7 .historyCal td {
+    padding: 8px 0px;
+}
+
+#mypage_page7 .infoSchedule {
+    width:100%;height:115px;overflow-y:scroll;color:#333333;padding:15px 0px;vertical-align:middle;border-top:1px solid #98897F;border-bottom:1px solid #98897F;margin:0px auto;font-size:0.9rem;line-height:1.4rem;background:#FFF;border-collapse:collapse;
+}
+
+#mypage_page7 table {
+    width:100%;margin-top:15px;border-collapse:collapse;
+}
+
+#mypage_page7 table input[type=text] {
+    background:#F5F6F7;color:#000;font-weight:bold;border:1px solid #DADADA;width:120px;font-size:0.8rem;height:33px;text-align:center;
+}
+
+#mypage_page7 button {
+    margin-top: 15px;
+}
+
+#mypage_page7 p.MoreSchedule {
+    border-bottom: 1px solid #000;width:80%;margin:0px auto;padding-bottom:3px;margin-bottom:10px;font-size:0.8rem;
+}
+
+#mypage_page7 .subTitle { margin:0px auto; margin-top: 10px; line-height:1.3rem; font-weight:normal; margin-bottom: 10px; }
+
+/*****************************
+* MyPage Tab 5 - 자동 완성 문구.
+*****************************/
+#mypage_page5 button.sys_btn {
+    width: 180px;
+    height: 40px;
+    margin: 10px auto;
+}
+
+#mypage_page5 #automessage_title {
+    border:1px solid #FEA45A;
+    width:80%;
+    margin-bottom:5px;
+    padding:4px 8px;
+    font-size:0.8rem;
+    line-height:1.3rem;
+}
+#mypage_page5 #automessage_content {
+    border:1px solid #FEA45A;
+    width:80%;
+    padding:4px 8px;
+    font-size:0.8rem;
+    line-height:1.3rem;
+}
+
+#mypage_page5 p.modify_mode {
+	font-size: 0.8rem;
+	margin-top: -4px;
+	margin-bottom: 0px;
+	z-index: 10;
+}
+
+#mypage_page5 p.modify_mode span {
+	cursor: pointer;
+	z-index: 20;
+}
+
+/*****************************
+* MyPage Tab 4 - 상담 시자
+*****************************/
+#mypage_page4 div.therapyState { text-align: center; }
+#mypage_page4 #therayCountSelect { width: 138px;margin:10px auto;padding: 8px 4px;border: 2px solid #FEA45A; }
+#mypage_page4 .therapyCount { font-size: 0.9rem;background:#FEA45A;color:#000000; }
+#mypage_page4 .therapyStart { display:block;margin:10px auto;padding: 8px 4px;background:#FFF;color:#FEA45A;border:2px solid #FEA45A; }
+#mypage_page4 .therapyStart:hover { opacity: 0.4; }
+
+#therapyInfo { position:absolute;top:3%;right:5%;padding:15px 30px;border: 1px solid #FEA45A; background: #FFF; }
+#therapyInfo .therapyTimer { vertical-align:middle;font-size:0.85rem;color:#000;margin-right:12px; }
+#therapyInfo .therapyTimer span.ing { color:#FEA45A;font-weight:bold; }
+#therapyInfo .therapyTimer span.exit { color:RED;font-weight:bold; }
+#therapyInfo .therapyCancel { font-size:0.9rem;padding:10px 15px;display:inline-block;vertical-align: middle;margin:0px auto;background:#FFF;color:#FEA45A;border:1px solid #FEA45A; }
+#therapyInfo .therapyCancel:hover { opacity: 0.4; }
+#therapyInfo .therapyFinish { font-size:0.9rem;padding:10px 15px;display:inline-block;vertical-align: middle;margin:0px auto;background:#FEA45A;color:#FFF;border:1px solid #FEA45A; }
+#therapyInfo .therapyFinish:hover { opacity: 0.4; }
+
+#mypage_page4 .mypage_memo {
+    overflow: hidden;
+    background: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png") no-repeat right;
+    background-size: 20px;
+    display: block;
+    height: auto;
+    border: 1px solid #DADADA;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0px auto;
+    margin-top: 3px;
+    width: 120px;
+    margin: 0px auto;
+}
+
+#mypage_page4 .mypage_memo select {
+    background: transparent;
+    margin: 0px auto;
+    width: 95%;
+    outline: none;
+    border: none;
+    height: 100%;
+    -webkit-appearance: none;
+}
+
+/*********************************
+* Counseller text
+*********************************/
+.chat_log_c {
+    position: relative;
+    left: 80px;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    font-size: 0.9rem;
+    line-height: 1.45rem;
+    color: #040000;
+    padding-bottom: 2%;
+}
+
+.chat_log_c_ {
+    position: relative;
+    width: 100%;
+    max-width: 45%;
+    border: 1px solid rgba(127,127,127, 0.5);
+    background: #FFFFFF;
+    word-break: break-all;
+}
+
+.chat_log_c_:after, .chat_log_c_:before {
+    right: 100%;
+    top: 15px;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+}
+
+.chat_log_c_:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #FFFFFF;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+.chat_log_c_:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(127,127,127, 0.5);
+    border-width: 11px;
+    margin-top: -11px;
+}
+
+.c_p {
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 100px;
+    color: #999999;
+    font-size:12px;
+}
+
+.chat_log_p {
+    position: relative;
+    left: -8px;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    font-size: 0.9rem;
+    line-height: 1.45rem;
+    color: #040000;
+    padding-bottom: 2%;
+}
+
+.chat_log_p_ {
+    float: right;
+    width: 100%;
+    max-width: 50%;
+    position: relative;
+    right: 30px;
+    border: 1px solid rgba(255,179,71, 0.5);
+    background: #FFFFFF;
+    word-break: break-all;
+}
+
+.chat_log_p_:after, .chat_log_p_:before {
+    left: 100%;
+    top: 15px;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+}
+
+.chat_log_p_:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #FFFFFF;
+    border-width: 10px;
+    margin-top: -10px;
+}
+.chat_log_p_:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(255,179,71, 0.7);
+    border-width: 11px;
+    margin-top: -11px;
+}
+
+.p_p {
+    text-align: right;
+    margin-right: 30px;
+    color: #999999;
+    font-size: 12px;
+    float: none;
+    clear: both;
+    line-height: 25px;
+    margin-bottom: 6px;
+}
+
+#p_circle {
+    position: relative;
+    float: right;
+    left: 56%;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: #ededed;
+    opacity: 1;
+    border: 0px;
+    border-radius: 50%;
+    z-index: 70;
+}
+
+/*********************************
+* TROST System Message
+*********************************/
+.chat_log_tc {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    font-size: 0.9rem;
+    line-height: 1.45rem;
+    font-weight: normal;
+    padding: 0.8rem;
+    color: #000;
+}
+
+.chat_log_tc_ {
+    margin: 0px auto;
+    width: 55%;
+    background-color: #FEA45A;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+#chatLog {
+    width: 100%;
+    overflow-x: hidden;
+    max-height: 500px;width: 100%;height: 100%;
+}
+
+.texttime_b1, .texttime_b3, .texttime_b4 {
+    margin: 0px 3px;
+    width: 49px;
+    height: 49px;
+}
+
+
+/*****************************
+* Texttime_Page
+*****************************/
+.p_emergency {
+    width: 20%;
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: rgba(93, 63, 28, 0.5);
+    padding: 0px 0px 20px 0px;
+}
+
+.chat_submit {
+    width: 85%;
+    border-top: 6px solid #EDEDED;
+    height: auto;
+}
+
+#message {
+    width: 85%;
+    padding: 10px 0px 0px 10px;
+    background: transparent;
+    font-size: 1rem;
+    vertical-align: middle;
+    outline: 0;
+    border: none;
+    overflow: visible;
+    position: relative;
+    bottom: 0px;
+    height: 65px;
+    min-height: 65px;
+    max-height: 250px;
+}
+
+.b_send {
+    cursor: pointer !important;
+    width: 3rem;
+    vertical-align: middle;
+    margin-left: 3.5%;
+}
+
+#messageSendBox { overflow-y:scroll;display:inline-block;width:80%;padding:10px 0px 0px 5px;vertical-align:middle;height:100%;border:none;outline:none; }
+#messageSendTab { overflow-y:none;display:inline-block;width:auto;vertical-align:middle;line-height:80px;height:100%;border:none;outline:none; }
+
+#emotion_box { display:none;position:absolute;bottom:10%;right:8%;width:300px;height:150px;border:2px solid #FEA45A;border-radius:8px;z-index:99999;padding:15px 10px 10px 10px;background:#FFF; }
+#emotion_box table { width:100%;height:100%;border-collapse:collapse;text-align:center;vertical-align:middle; }
+#emotion_box img { width:40px; }
+#emotion_box:after, #emotion_box:before { top: 100%;left: 87%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none; }
+#emotion_box:after { border-color: rgba(255, 255, 255, 0); border-top-color: #FFF; border-width: 10px; margin-left: -22px; }
+#emotion_box:before { border-color: rgba(254, 164, 90, 0); border-top-color: #FEA45A; border-width: 13px; margin-left: -25px; }
+
+/*************************
+* 상담 페이지 내 이미지.
+*************************/
+img.imoji_sm {
+    height:23px;
+    margin:0px 2px;
+    vertical-align:bottom;
+}
+
+img.imoji_big {
+    height:80px;
+    margin-top:-15px;
+    vertical-align:bottom;
+}
+
+img.c_profile_img {
+    float:left;width:50px;margin-left: 30px;margin-right:20px;vertical-align:middle;border-radius:50%;display:block;cursor:pointer;
+}
+
+span.c_profile_name {
+    position:absolute;left:39px;top:55px;font-size:0.8rem;
+}
+/************************/
+
+.opacityBg { display:none;position:fixed;z-index:15896480;top:0px;background: rgba(000, 000, 000, 0.8);width:100%;height:100%; }
+
+/* 상담 로딩 애니메이션 */
+div.loader {
+	height: 100px;
+	width: 100px;
+	border: 6px solid #fff;
+	border-right-color: #FEA45A;
+	border-top-color: #FEA45A;
+	border-radius: 100%;
+	border-width: 13px;
+	-webkit-animation: spin 800ms infinite linear;
+	animation: spin 800ms infinite linear;
+	z-index: 15896485;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+	display: none;
+}
+
+p.loader {
+	z-index: 15896485;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	display: none;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #FFF;
+}
+
+@-webkit-keyframes "spin" {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+
+@keyframes "spin" {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+
+.recommendPartner { display:none;width:700px;height:auto;padding:20px;background:#fbf7ef;position:absolute;z-index:9999;top:50%;left:50%;margin-top:-390px;margin-left:-400px;text-align:center;line-height:1.5rem;font-size:1rem;border:1px solid #98897F; }
+.recommendPartner h1 { width:95%;border:1px solid #301D09;font-size:1.25rem;margin:0px auto;text-align:center;padding: 15px 0px; }
+.recommendPartner h3 { font-size:0.9rem; }
+.recommendPartner #btn_recommendPartner { margin: 0px auto;padding: 10px 0px;background: #FEA45A;font-size: 1rem;color: #FFF;width: 150px; }
+.recommendPartner #btn_recommendClose { margin: 0px auto;margin-left:12px;padding: 10px 0px;background: #DDDBDF;font-size: 1rem;color: #000;width: 150px; }
+.recommendPartner input[type=checkbox] { display: none; }
+.recommendPartner input[type=radio] { display: none; }
+.recommendPartner label { border: 1px solid #999999;display: inline-block;padding: 4px 0px;width: 90px;vertical-align: middle;color: #4D4D4D;font-size: 0.75rem;border-radius: 8px;background: #FFFFFF;margin-right: 10px;margin-bottom: 10px; }
+.recommendPartner label .checkbox--icon { border: 1px solid #999999;display: inline-block;vertical-align: middle;color: #4D4D4D;font-size: 0.95rem;border-radius: 8px;background: #999999; }
+.recommendPartner input[type=radio]:checked + label { background: #FEA45A;color: #FFFFFF;border: 1px solid #FEA45A; }
+.recommendPartner input[type=checkbox]:checked + label { background: #FEA45A;color: #FFFFFF;border: 1px solid #FEA45A; }
+
+div#typingID::before {
+    border-color: transparent;
+    border-right-color: rgba(127,127,127,.5);
+    border-width: 11px;
+    margin-top: -11px;
+}
+
+div#typingID::after,
+div#typingID::before {
+    right: 100%;
+    top: 15px;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+}
