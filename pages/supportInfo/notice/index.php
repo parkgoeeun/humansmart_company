@@ -26,16 +26,10 @@ if ($_GET['mode'] == 'updateMode') {
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.7 -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <!-- Google Font -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <meta name="robots" content="NONE"/>
     <meta name="reply-to" content="trost@hu-mart.com"/>
     <meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
@@ -48,20 +42,10 @@ if ($_GET['mode'] == 'updateMode') {
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <style>
-        #example2 td {
-            vertical-align: middle;
-            font-size: 1.3rem;
-        }
+        #example2 td { vertical-align:middle; font-size:1.3rem; }
 
-        .hashtag {
-            width: 100%;
-            margin-top: 40px;
-        }
-
-        .hashtag th, td {
-            vertical-align: top;
-            border: 1px solid #999;
-        }
+        .hashtag { width: 100%; margin-top: 40px; }
+        .hashtag th, td { vertical-align:top; border: 1px solid #999; }
     </style>
     <!--    <script type="text/javascript">-->
     <!--        window.onload = function() {-->
@@ -84,21 +68,22 @@ if ($_GET['mode'] == 'updateMode') {
     <!--        }-->
     <!--    </script>-->
     <script>
-        function check() {
-            if (frm.headline.value == "") {
+        function check(){
+            if(frm.headline.value==""){
                 alert("제목을 입력해주세요");
                 frm.headline.focus();
                 return false;
             }
-            else if (frm.detail.value == "") {
+            else if(frm.detail.value==""){
                 alert("공지 내용을 입력해주세요");
                 frm.detail.focus();
                 return false;
             }
             else
-                $(function () {
+                $(function(){
+
                     var totalInfo = new Object();
-                    for (var i = 1; i <= 2; i++) {
+                    for(var i=1;i<=2;i++){
                         var alarmInfo = new Object();
                         alarmInfo.제목 = $("input#headline").val();
                         alarmInfo.내용 = $("textarea#detail").val();
@@ -108,6 +93,56 @@ if ($_GET['mode'] == 'updateMode') {
                     alert(jsonInfo);
                 });
         }
+    </script>
+    <script>
+        var xE = {};
+        function xFn(e)
+        {
+            xE.w.focus();
+            var c = e.innerHTML,
+                a = c +' ';
+            try { a += xE.d.execCommand(c, false, e); } catch (x) { a += 'Error : ' + x.message; }
+            xE.m.innerHTML = a;
+        }
+        function xHv()
+        {
+            xE.m.innerHTML =
+                xE.d.body.innerHTML
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+        }
+        window.onload = function()
+        {
+            xE.w = document.getElementById('yF').contentWindow;
+            xE.d = xE.w.document;
+            xE.d.write('<!DOCTYPE html><html><head></head><body></body></html>');
+            xE.d.designMode = 'on';
+            xE.m = document.getElementById('yM');
+            xE.w.focus();
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#change_btn').click(function() {
+                $.getJSON('noticeData.json', function(data) {
+                    var html = ''
+
+                    $.each(data, function(entryIndex, entry) {
+                        html +='<form>' + '제목 : <input type ="text" value="' + entry.title + '" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">';
+//                        html += '<div class="entry">';
+                        html +='<form>' + '내용: <input type ="text" value="' + entry.content + '" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">';
+//                        html += '<div class="content">';
+//                        html += entry.content;
+//                        html += '</div>';
+                        html += '</form>';
+                    });
+                    console.log(html);
+                    $('#dictionary').html(html);
+                });
+                return false;
+            });
+        });
     </script>
 </head>
 <body class="hold-transition skin-blue fixed sidebar-mini">
@@ -120,9 +155,9 @@ if ($_GET['mode'] == 'updateMode') {
         document.getElementById("infoTable_9_4").className = "active";
 
         function is_ie() {
-            if (navigator.userAgent.toLowerCase().indexOf("chrome") != -1) return false;
-            if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) return true;
-            if (navigator.userAgent.toLowerCase().indexOf("windows nt") != -1) return true;
+            if(navigator.userAgent.toLowerCase().indexOf("chrome") != -1) return false;
+            if(navigator.userAgent.toLowerCase().indexOf("msie") != -1) return true;
+            if(navigator.userAgent.toLowerCase().indexOf("windows nt") != -1) return true;
             return false;
         }
 
@@ -149,24 +184,38 @@ if ($_GET['mode'] == 'updateMode') {
                 <div class="col-md-12">
                     <div class="box box-info">
                         <div class="box-header">
-                            <h3 class="box-title"><strong>새로운 공지사항</strong>
-                                <small>추가하기</small>
+                            <h3 class="box-title"><strong>공지사항</strong>
+                                <small>새로 추가하기</small>
                             </h3>
                         </div>
-                        fc
                         <!-- /.box-header -->
                         <div class="box-body pad">
-                            <form name="frm" onsubmit="return check()">
-                                <div><input type="text" id="headline" name="headline" placeholder="제목을 입력해주세요"
-                                            style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"/>
+                            <div style="padding:2px">
+                                <button type=button onclick="xFn(this)">bold</button>
+                                <button type=button onclick="xFn(this)">italic</button>
+                                <button type=button onclick="xFn(this)">delete</button>
+                                <button type=button onclick="xFn(this)">insertOrderedList</button>
+                                <button type=button onclick="xFn(this)">insertUnorderedList</button>
+                                <button type=button onclick="xFn(this)">justifyCenter</button>
+                                <button type=button onclick="xFn(this)">justifyFull</button>
+                                <button type=button onclick="xFn(this)">justifyLeft</button>
+                                <button type=button onclick="xFn(this)">justifyRight</button>
+                                <button type=button onclick="xFn(this)">removeFormat</button>
+                                <button type=button onclick="xFn(this)">selectAll</button>
+                                <button type=button onclick="xFn(this)">strikeThrough</button>
+                                <button type=button onclick="xFn(this)">underline</button>
+                                <button type=button onclick="xFn(this)">undo</button>
+                                <button type=button onclick="xHv()">HTML</button>
+                            </div>
+                            <iframe id=yF src="about:blank" style="box-sizing:border-box;border:1px solid #999;padding:2px;width:100%;height:150px;"></iframe>
+                            <div id=yM style="padding:2px"></div>
+                            <form name = "frm" onsubmit="return check()">
+                                <div> <input type ="text"  id = "headline" name="headline" placeholder="제목입력창 : html 변환 -> 변환된 코드 복사 -> 붙여넣기" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"/>
                                 </div>
-                                <textarea class="textarea" id="detail" name="detail" placeholder="내용을 입력해주세요"
-                                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                        </div>
-                        </form>
+                                <textarea class="textarea" id = "detail" name="detail" placeholder="내용입력창 : html 변환 -> 변환된 코드 복사 -> 붙여넣기" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        </div></form>
                         <div class="box-footer">
-                            <button id="content" type="submit" class="btn btn-primary pull-right" onclick=check()>저장하기
-                            </button>
+                            <button id = "save" type="submit" class="btn btn-primary pull-right" onclick = check() >저장하기</button>
 
                         </div>
 
@@ -180,34 +229,27 @@ if ($_GET['mode'] == 'updateMode') {
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body pad">
-                            <form>
-                <textarea class="textarea" placeholder="수정할 정보를 입력해주세요"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                            </form>
-                            <div class="box-footer">
-                                <button type="submit" class="btn btn-primary pull-right">수정하기</button>
+                            <div id="container">
+                                <div class="letters">
+                                    <div class="letter" id="target">
+                                        <button id = "change_btn"type="submit" class="btn btn-primary pull-right">이전 공지사항 불러오기</button>
+                                    </div>
+                                </div>
+                                <div id="dictionary">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /.col-->
             </div>
-            <!-- ./row -->
-        </section>
-        <!-- /.content -->
+            <!-- /.col-->
     </div>
-    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../../plugins/datatables/dataTables.bootstrap.min.js"></script>
-    <!--<script>-->
-    <!--    $("#content").bind("click",function(){-->
-    <!--        var targetForm = $("#frm_req_adjust_price .__required");-->
-    <!--        $.each(targetForm, function(index, elem){-->
-    <!--            alert("이름 : " + $(this).attr("headline") + ", 내용 : " + $(this).attr("detail"));-->
-    <!--        });-->
-    <!--    });-->
-    <!--</script>-->
-
+    <!-- ./row -->
+    </section>
+    <!-- /.content -->
+</div>
+<script src="../../../bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../plugins/datatables/jquery.dataTables.min.js"></script>
 
 </body>
 </html>
