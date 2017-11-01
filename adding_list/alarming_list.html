@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>공지사항 입력창</title>
+    <script type = "text/javascript"></script>
+    <script>
+
+        'use strict';
+//                var alarmArray = new Array();
+                    var totalInfo = new Object();
+                for(var i=1;i<=2;i++){
+                    var alarmInfo = new Object();
+                    alarmInfo.headline = "뽑기행사";
+                    alarmInfo.content = "꽝없는 뽑기";
+//                    alarmArray.push(alarmInfo);
+
+                    totalInfo[i] = alarmInfo;
+//                    totalInfo.person = alarmArray;
+                }
+
+                var jsonInfo = JSON.stringify(totalInfo);
+                console.log(jsonInfo);
+//                alert(jsonInfo);
+    </script>
+</head>
+<body>
+    <br><br>
+</body>
+</html>

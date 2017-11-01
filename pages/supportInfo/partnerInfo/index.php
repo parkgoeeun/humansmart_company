@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/file/cont_db.php");
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/Dummy/assets/file/cont_db.php");
 
 //	if ((!$_SESSION['admin_grade']) || (!$_SESSION['admin_id'])) {
 //		echo "<script>alert(\"관리자 계정으로 다시 로그인 부탁드립니다.\");</script>";
@@ -13,7 +13,7 @@
 		$result = mysqli_query($conn_, "UPDATE `trost`.`mb_partner` SET `work_mode` = '" . $_GET['counselingmode'] . "' WHERE (`id` = '" . $_GET['id'] . "') ORDER BY `no` ASC LIMIT 1;");
 
 		if ($result) {
-			echo "<script>location.href='/pages/supportInfo/partnerInfo/'</script>";
+			echo "<script>location.href='/Dummy/pages/supportInfo/partnerInfo/'</script>";
 		} else {
 			echo "<script>alert('상태 변경에 실패했습니다, 다시 시도해주세요.')</script>";
 			echo "<script>history.go(-1)</script>";
@@ -50,7 +50,7 @@
 	<body class="hold-transition skin-blue fixed sidebar-mini">
 		<div class="wrapper">
 
-		<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/pages/common/navigation.php"); ?>
+		<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/Dummy/pages/common/navigation.php"); ?>
 
 		<script>
 			document.getElementById("infoTable_9").className = "treeview active";
@@ -138,8 +138,8 @@
 										echo "<tr>
 											<td>" . $getInfoOfPartner['no'] . "</td>
 											<td>
-												<a style='font-weight:bold;' href='/pages/supportInfo/partnerInfo/profile/?no=" . $getInfoOfPartner['no'] . "'>" . $getInfoOfPartner['name'] . "(" . $getInfoOfPartner['id'] . ")</a><br/>
-												<button onclick='location.href=\"/pages/supportInfo/partnerInfo/addNew/?type=mod&id=" . $getInfoOfPartner['id'] . "\"' class=\"btn btn-primary btn-xs\" style='vertical-align:middle;margin-top:6px;'>수정</button>
+												<a style='font-weight:bold;' href='/Dummy/pages/supportInfo/partnerInfo/profile/?no=" . $getInfoOfPartner['no'] . "'>" . $getInfoOfPartner['name'] . "(" . $getInfoOfPartner['id'] . ")</a><br/>
+												<button onclick='location.href=\"/Dummy/pages/supportInfo/partnerInfo/addNew/?type=mod&id=" . $getInfoOfPartner['id'] . "\"' class=\"btn btn-primary btn-xs\" style='vertical-align:middle;margin-top:6px;'>수정</button>
 											</td>
 											<td>" . $getInfoOfPartner['sex'] . "</td>
 											<td>" . $getInfoOfPartner['age'] . "</td>

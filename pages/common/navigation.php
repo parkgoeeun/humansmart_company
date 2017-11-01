@@ -20,8 +20,11 @@
 						<i class="fa fa-table"></i><span>상담사 관리</span>
 					</a>
 					<ul class="treeview-menu">
-                        <li id='infoTable_9_2'><a href="/pages/supportInfo/partnerInfo/">상담사 현황</a></li>
-						<li id='infoTable_9_3'><a href="/pages/supportInfo/partnerInfo/addNew/">상담사 추가</a></li>
+                        <li id='infoTable_9_2'><a href="/trost/Dummy/pages/supportInfo/partnerInfo/">상담사 현황</a></li>
+						<li id='infoTable_9_3'><a href="/trost/Dummy/pages/supportInfo/partnerInfo/addNew/">상담사 추가</a></li>
+                        <li id='infoTable_9_4'><a href="/trost/Dummy/pages/supportInfo/notice/">공지사항 추가</a></li>
+                        <li id='infoTable_9_5'><a href="/trost/Dummy/pages/supportInfo/Question/"> Q&A 추가</a></li>
+                        <li id='infoTable_9_6'><a href="/trost/Dummy/pages/supportInfo/advice/"> 상담접수지 관리</li>
 					</ul>
 				</li>
 			</ul>

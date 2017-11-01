@@ -1,0 +1,207 @@
+{
+  "0": [
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "부모님과의 친밀도",
+        "subTitle": "(1: 매우 어색하다 ~ 5: 매우 친하다.)",
+        "category": "개인"
+      },
+      "answer": [
+        {
+          "type": "setPoint",
+          "title": "아버지",
+          "answer_id": "fatherPoint"
+        },
+        {
+          "type": "setPoint",
+          "title": "어머니",
+          "answer_id": "motherPoint"
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "부모님과의 친밀도",
+        "subTitle": "(1: 매우 어색하다 ~ 5: 매우 친하다.)",
+        "category": "개인"
+      },
+      "answer": [
+        {
+          "type": "setPoint",
+          "title": "아버지",
+          "answer_id": "fatherPoint"
+        },
+        {
+          "type": "setPoint",
+          "title": "어머니",
+          "answer_id": "motherPoint"
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "어떤 종교를?",
+        "subTitle": "",
+        "category": ""
+      },
+      "answer": [
+        {
+          "type": "setButtons",
+          "title": [
+            "무교",
+            "기독교",
+            "천주교",
+            "불교",
+            "기타"
+          ],
+          "answer_id": [
+            "none",
+            "",
+            "",
+            "",
+            "etc"
+          ]
+        },
+        {
+          "type": "setList",
+          "title": "종교에 민감한 편이다.",
+          "answer_id": "religion"
+        },
+        {
+          "type": "setList",
+          "title": "크게 상관하지 않는다.",
+          "answer_id": "religion"
+        }
+      ]
+    }
+  ],
+  "1": [
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "부모님과의 친밀도",
+        "subTitle": "(1: 매우 어색하다 ~ 5: 매우 친하다.)",
+        "category": "개인"
+      },
+      "answer": [
+        {
+          "type": "setPoint",
+          "title": "아버지",
+          "answer_id": "fatherPoint"
+        },
+        {
+          "type": "setPoint",
+          "title": "어머니",
+          "answer_id": "motherPoint"
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "부모님과의 친밀도",
+        "subTitle": "(1: 매우 어색하다 ~ 5: 매우 친하다.)",
+        "category": "개인"
+      },
+      "answer": [
+        {
+          "type": "setPoint",
+          "title": "아버지",
+          "answer_id": "fatherPoint"
+        },
+        {
+          "type": "setPoint",
+          "title": "어머니",
+          "answer_id": "motherPoint"
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "심리상담을 받아본적이 있으신가요?",
+        "subTitle": "",
+        "category": ""
+      },
+      "answer": [
+        {
+          "type": "setButtonWithList",
+          "title": [
+            "있습니다.",
+            "없습니다."
+          ],
+          "answer_id": [
+            "true",
+            "false"
+          ],
+          "line_position": 1
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "부모님과의 친밀도",
+        "subTitle": "(1: 매우 어색하다 ~ 5: 매우 친하다.)",
+        "category": "개인"
+      },
+      "answer": [
+        {
+          "type": "setPoint",
+          "title": "아버지",
+          "answer_id": "fatherPoint"
+        },
+        {
+          "type": "setPoint",
+          "title": "어머니",
+          "answer_id": "motherPoint"
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "부모님과의 친밀도",
+        "subTitle": "(1: 매우 어색하다 ~ 5: 매우 친하다.)",
+        "category": "개인"
+      },
+      "answer": [
+        {
+          "type": "setPoint",
+          "title": "아버지",
+          "answer_id": "fatherPoint"
+        },
+        {
+          "type": "setPoint",
+          "title": "어머니",
+          "answer_id": "motherPoint"
+        }
+      ]
+    },
+    {
+      "question": {
+        "id": "expe_counseling",
+        "title": "부모님과의 친밀도",
+        "subTitle": "(1: 매우 어색하다 ~ 5: 매우 친하다.)",
+        "category": "개인"
+      },
+      "answer": [
+        {
+          "type": "setPoint",
+          "title": "아버지",
+          "answer_id": "fatherPoint"
+        },
+        {
+          "type": "setPoint",
+          "title": "어머니",
+          "answer_id": "motherPoint"
+        }
+      ]
+    }
+  ]
+}

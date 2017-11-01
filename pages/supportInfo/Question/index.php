@@ -39,7 +39,7 @@ if ($_GET['mode'] == 'updateMode') {
     <link rel="stylesheet" href="../../../dist/css/skins/_all-skins.min.css">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
     <style>
         #example2 td { vertical-align:middle; font-size:1.3rem; }
         .hashtag { width: 100%; margin-top: 40px; }
@@ -80,7 +80,6 @@ if ($_GET['mode'] == 'updateMode') {
             reader.onload = onReaderLoad;
             reader.readAsText(event.target.files[0]);
         }
-
         function onReaderLoad(event){
             //alert(event.target.result);
             var obj = JSON.parse(event.target.result);
@@ -106,20 +105,18 @@ if ($_GET['mode'] == 'updateMode') {
 
                 alarmInfo.제목 = $("input#headline").val();
                 alarmInfo.내용 = $("textarea#detail").val();
-                console.log(alarmInfo);
                 totalInfo[0] = alarmInfo;
 
-//                realarmInfo.제목 = $("input#reheadline_").val();
-//                realarmInfo.내용 = $("input#redetail_").val();
-
-                $.getJSON('noticeData.json', function(data) {
+                realarmInfo.제목 = $("input#reheadline_").val();
+                realarmInfo.내용 = $("input#redetail_").val();
+                $.getJSON('questionData.json', function(data) {
 
                     $.each(data, function(entryIndex, entry) {
                         totalInfo[parseInt(entryIndex) + 1] = entry;
-//                        retotalInfo[parseInt(entryIndex) + 1] = realarmInfo;
+                        retotalInfo[parseInt(entryIndex) + 1] = realarmInfo;
                     });
                     jsonInfo = JSON.stringify(totalInfo);
-//                    jsonInfo = JSON.stringify(retotalInfo);
+                    jsonInfo = JSON.stringify(retotalInfo);
                     alert(jsonInfo);
 //                    string path = "C:\Users\goe eun park\PhpstormProjects\trost\Dummy\pages\supportInfo\notice\noticeData.json";
 //                    try{
@@ -137,7 +134,7 @@ if ($_GET['mode'] == 'updateMode') {
         }
         $(document).ready(function() {
             $('#change_btn').click(function() {
-                $.getJSON('noticeData.json', function(data) {
+                $.getJSON('questionData.json', function(data) {
                     var html = ''
                     var i = 1;
                     $.each(data, function(entryIndex, entry) {
@@ -153,13 +150,13 @@ if ($_GET['mode'] == 'updateMode') {
             });
         });
     </script>
-</head>
+    </head>
 <body class="hold-transition skin-blue fixed sidebar-mini">
 <div class="wrapper">
     <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/Dummy/pages/common/navigation.php"); ?>
     <script>
         document.getElementById("infoTable_9").className = "treeview active";
-        document.getElementById("infoTable_9_4").className = "active";
+        document.getElementById("infoTable_9_5").className = "active";
         function is_ie() {
             if(navigator.userAgent.toLowerCase().indexOf("chrome") != -1) return false;
             if(navigator.userAgent.toLowerCase().indexOf("msie") != -1) return true;
@@ -173,12 +170,12 @@ if ($_GET['mode'] == 'updateMode') {
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                공지사항 추가
-                <small>공지사항을 입력해주세요</small>
+                Q&A  추가
+                <small>Q&A 를 입력해주세요</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> 상담사 관리</a></li>
-                <li><a href="#"><strong>공지사항 추가창</strong></a></li>
+                <li><a href="#"><strong>Q&A 추가창</strong></a></li>
             </ol>
         </section>
         <!-- Main content -->
@@ -187,7 +184,7 @@ if ($_GET['mode'] == 'updateMode') {
                 <div class="col-md-12">
                     <div class="box box-info">
                         <div class="box-header">
-                            <h3 class="box-title"><strong>공지사항</strong>
+                            <h3 class="box-title"><strong>Q&A </strong>
                                 <small>새로 추가하기</small>
                             </h3>
                         </div>
@@ -212,22 +209,21 @@ if ($_GET['mode'] == 'updateMode') {
                             </div>
                             <iframe id=yF src="about:blank" style="box-sizing:border-box;border:1px solid #999;padding:2px;width:100%;height:150px;"></iframe>
                             <div id=yM style="padding:2px"></div>
-                              <form name = "frm" onsubmit="return check()">
-                   <div> <input type ="text"  id = "headline" name="headline" placeholder="제목입력창 : html 변환 -> 변환된 코드 복사 -> 붙여넣기" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"/>
-                            </div>
+                            <form name = "frm" onsubmit="return check()">
+                                <div> <input type ="text"  id = "headline" name="headline" placeholder="제목입력창 : html 변환 -> 변환된 코드 복사 -> 붙여넣기" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"/>
+                                </div>
                                 <textarea class="textarea" id = "detail" name="detail" placeholder="내용입력창 : html 변환 -> 변환된 코드 복사 -> 붙여넣기" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                         </div></form>
-                    <div class="box-footer">
-                        <button id = "save" type="submit" class="btn btn-primary pull-right" onclick = check() >저장하기</button>
-                        <a href= # id="link" download="noticeData.json">download</a>
-                    </div>
-
+                        <div class="box-footer">
+                            <button id = "save" type="submit" class="btn btn-primary pull-right" onclick = check() >저장하기</button>
+                            <a href= # id="link" download="noticeData.json">download</a>
+                        </div>
                     </div>
                     <!-- /.box -->
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title"><strong>이전 공지사항</strong>
-                                <small>기존 공지사항 수정하기</small>
+                            <h3 class="box-title"><strong>이전 Q&A </strong>
+                                <small>기존 Q&A 수정하기</small>
                             </h3>
                         </div>
                         <!-- /.box-header -->
@@ -241,16 +237,16 @@ if ($_GET['mode'] == 'updateMode') {
                                 <div id="dictionary">
                                 </div>
                             </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- /.col-->
             </div>
-            <!-- ./row -->
-        </section>
-        <!-- /.content -->
+            <!-- /.col-->
     </div>
+    <!-- ./row -->
+    </section>
+    <!-- /.content -->
+</div>
 <script src="../../../bootstrap/js/bootstrap.min.js"></script>
 <script src="../../../plugins/datatables/jquery.dataTables.min.js"></script>
 </body>
